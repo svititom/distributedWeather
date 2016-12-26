@@ -1,0 +1,8 @@
+{block content}
+    <h1 n:block="tile"> My blog</h1>
+
+    <a n:href="Post:create" n:if="$user->isInRole('admin')">Write new article</a>
+    {foreach $posts as $post}
+        <h2><a n:href="Post:show $post->id">{$post->title}</a></h2>
+    {/foreach}
+{/block}

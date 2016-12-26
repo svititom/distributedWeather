@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - quickstart@localhost" uuid="23e2c08d-e90d-4930-b696-f7c4f0253c7a">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-scope>quickstart:</introspection-scope>
+      <resolve-scope>quickstart:</resolve-scope>
+    </data-source>
+  </component>
+</project>

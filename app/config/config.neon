@@ -1,0 +1,39 @@
+#
+# WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+# https://nette.org/security-warning
+#
+parameters:
+
+php:
+	date.timezone: Asia/Singapore
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	autoStart: off #remove?
+	expiration: 14 days
+
+
+services:
+	- App\Model\UserManager
+	- App\Forms\FormFactory
+	- App\Forms\SignInFormFactory
+	- App\Forms\SignUpFormFactory
+	- App\Model\ArticleManager
+	router: App\RouterFactory::createRouter
+	formFactory: Instante\Bootstrap3Renderer\BootstrapFormFactory
+
+extensions:
+	events: Kdyby\Events\DI\EventsExtension
+	fakeSession: Kdyby\FakeSession\DI\FakeSessionExtension
+	extendedFormMacros: Instante\ExtendedFormMacros\DI\ExtendedFormMacrosExtension
+
+
+events:
+	subscribers:
+		- App\Api\ErrorPresenterListener
+		- App\Api\DisableSessionListener

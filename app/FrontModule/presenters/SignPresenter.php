@@ -2,8 +2,13 @@
 
 namespace App\FrontModule\Presenters;
 
+use App\Model\UserMailer;
+use App\Model\UserNotFoundException;
 use Nette;
-use App\Forms;
+use Nette\Application\UI;
+use Nette\Application\UI\Form;
+use Nette\Mail\Message;
+use Nette\Mail\SmtpMailer;
 
 
 class SignPresenter extends \App\BasePresenter
@@ -11,6 +16,9 @@ class SignPresenter extends \App\BasePresenter
 
 	/** @var \Instante\ExtendedFormMacros\IFormFactory @inject */
 	public $formFactory;
+
+	/** @var  \App\Model\UserManager @inject */
+	public $userManager;
 
 	/** @persistent */
 	public $backlink = '';
@@ -23,7 +31,7 @@ class SignPresenter extends \App\BasePresenter
 			$this->user->setExpiration($values->remember ? '14 days' : '20 minutes');
 			$this->user->login($values->username, $values->password);
 		} catch (Nette\Security\AuthenticationException $e) {
-			$form->addError('The username or password you entered is incorrect.');
+			$form->addError('You need to enter a valid username and password.');
 			return;
 		}
 		$this->restoreRequest($this->backlink);
@@ -36,11 +44,14 @@ class SignPresenter extends \App\BasePresenter
 	protected function createComponentSignInForm()
 	{
 		$form = $this->formFactory->create();
-		$form->addText('username', 'Username:')
-			->setRequired('Please enter your username.');
-		$form->addPassword('password', 'Password:')
-			->setRequired('Please enter your password.');
+		$form->addText('username')
+			->setRequired('Please enter your username.')
+			->setAttribute('placeholder', 'Username');
+		$form->addPassword('password')
+			->setRequired('Please enter your password.')
+			->setAttribute('placeholder', 'Password');
 		$form->addCheckbox('remember', 'Keep me signed in');
+		$form->addProtection('Please try again');
 		$form->addSubmit('send', 'Sign in');
 
 		$form->onSuccess[] = [$this, 'signInSuccess'];
@@ -50,11 +61,17 @@ class SignPresenter extends \App\BasePresenter
 
 	public function signUpSuccess($form, $values){
 		try {
-			$this->userManager->add($values->username, $values->email, $values->password);
+			$this->userManager->addUser($values->username, $values->email, $values->password);
 		} catch (\App\Model\DuplicateNameException $e) {
-			$form->addError('Username is already taken.');
+			$message = 'Sorry, please choose a different username, ' . $values->username . ' is already taken';
+			$form->addError($message);
+			return;
+		} catch (\App\Model\DuplicateEmailException $e) {
+			$message = 'Sorry, please choose a different email, ' . $values->email . ' is already taken';
+			$form->addError($message);
 			return;
 		}
+
 		$this->redirect('Sign:in');
 	}
 	/**
@@ -64,23 +81,73 @@ class SignPresenter extends \App\BasePresenter
 	protected function createComponentSignUpForm()
 	{
 		$form = $this->formFactory->create();
-		$form->addText('username', 'Pick a username:')
-			->setRequired('Please pick a username.');
-		$form->addText('email', 'Your e-mail:')
+		$form->addText('username')
+			->setRequired('Please pick a username.')
+			->setAttribute('placeholder','Username');
+		$form->addText('email')
 			->setRequired('Please enter your e-mail.')
+			->setAttribute('placeholder','E-mail')
 			->addRule($form::EMAIL);
-		$form->addPassword('password', 'Create a password:')
-			->setOption('description', sprintf('at least %d characters', self::PASSWORD_MIN_LENGTH))
+		$form->addPassword('password')
 			->setRequired('Please create a password.')
+			->setAttribute('placeholder', sprintf('Password, at least %d characters', self::PASSWORD_MIN_LENGTH))
 			->addRule($form::MIN_LENGTH, NULL, self::PASSWORD_MIN_LENGTH);
+		$form->addPassword('passwordVerify')
+			->setRequired('Please retype your password')
+			->addRule(Form::EQUAL, 'Passwords are not the same', $form['password'])
+			->setAttribute('placeholder','Retype your password');
 		$form->addSubmit('send', 'Sign up');
 		$form->onSuccess[] = [$this, 'signUpSuccess'];
 		return $form;
 
 	}
 
+	public function changePasswordSucces($form, $values){
+		//todo implement
+	}
+	public function createComponentChangePassword(){
+		$form = $this->formFactory->create();
+		$form->addPassword('password')
+			->setRequired('Please create a password.')
+			->setAttribute('placeholder', sprintf('Password, at least %d characters', self::PASSWORD_MIN_LENGTH))
+			->addRule($form::MIN_LENGTH, NULL, self::PASSWORD_MIN_LENGTH);
+		$form->addPassword('passwordVerify')
+			->setRequired('Please retype your password')
+			->addRule(Form::EQUAL, 'Passwords are not the same', $form['password'])
+			->setAttribute('placeholder','Retype your password');
+		$form->addProtection('Time limit exceeded, please try again');
+		//todo implement
+		$form->addSubmit('send', 'Change Password');
+		$form->onSuccess[] = [$this, 'changePasswordSuccess'];
+		return $form;
+	}
+
+	public function renderChangePassword($email, $hash){
+		//todo implement
+	}
 
 
+	protected function createComponentForgotForm(){
+		$form = $this->formFactory->create();
+		$form->addText('email', 'Your email:')
+			->setRequired('We can\'t send you the reset link if you don\'t tell us your email ;)')
+			->addRule($form::EMAIL);
+		$form->addSubmit('send', 'Send reset link');
+		$form->onSuccess[] = function ($form, $values){
+			$this->userManager->sendResetMail($values->email);
+		};
+		return $form;
+	}
+
+	public function actionVerify($email, $hash){
+		//todo beautify!
+		try {
+			$result = $this->userManager->verifyUser($email, $hash);
+			$this->flashMessage($result);
+		} catch (UserNotFoundException $e){
+			$this->flashMessage('User not found!');
+		};
+	}
 
 	public function actionOut()
 	{
@@ -88,5 +155,8 @@ class SignPresenter extends \App\BasePresenter
         $this->flashMessage('Logout successful');
         $this->redirect('Homepage:');
 	}
+	
+
+
 
 }

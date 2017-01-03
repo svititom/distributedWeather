@@ -12,6 +12,9 @@ class PostPresenter extends Nette\Application\UI\Presenter
 {
     private $database;
 
+	/** @var  \Instante\Bootstrap3Renderer\BootstrapFormFactory @inject */
+	public $formFactory;
+
     public function commentFormSucceeded($form, $values)
     {
 
@@ -31,7 +34,7 @@ class PostPresenter extends Nette\Application\UI\Presenter
     protected function createComponentCommentForm()
     {
 
-        $form = new Form;
+        $form = $this->formFactory->create();
         $form->addText('name', 'Name: ')
             ->setRequired();
 
@@ -60,7 +63,7 @@ class PostPresenter extends Nette\Application\UI\Presenter
     }
     protected function createComponentPostForm()
     {
-        $form = new Form;
+        $form = $this->formFactory->create();
 
         $form->addText('title', 'Title:')
             ->SetRequired();
@@ -76,7 +79,7 @@ class PostPresenter extends Nette\Application\UI\Presenter
         if(!$this->getUser()->isLoggedIn()){
             $this->redirect('Sign:in');
         }
-        if(!$this->getUser()->isInRole('admirn')){
+        if(!$this->getUser()->isInRole('admin')){
 			$this->error('Only admins can edit posts', Nette\Http\IResponse::S403_FORBIDDEN);
 		}
     }
@@ -98,6 +101,8 @@ class PostPresenter extends Nette\Application\UI\Presenter
     {
         $this->database = $database;
     }
+
+
 
     public function renderShow($postId)
 	{

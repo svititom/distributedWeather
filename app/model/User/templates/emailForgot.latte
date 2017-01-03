@@ -1,0 +1,18 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Forgotten password</title>
+</head>
+<body>
+<p>Hi,</p>
+<p>If you have requested to reset your email, click the link below, otherwise just ignore this email.
+	<a href="http://distributedweather.mzf.cz/sign/forgot?email={$email}&hash={$hash}">Verify!</a> </p>
+<p>This link is valid until {$hashExpiration|date:'%d.%m.%y'}</p>
+<p>Alternatively, copy and paste this link into your browser without the quotes: 'http://distributedweather.mzf.cz/sign/forgot?email={$email}&hash={$hash}' </p>
+
+With best regards,<br>
+Tomas from Distributed Weather<br>
+<br>
+P.S. If multiple reset mails are generated, only the last one is valid.
+</body>
+</html>

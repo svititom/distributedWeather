@@ -2,14 +2,31 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/vendor/arachne/container-adapter" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/arachne/event-dispatcher" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dg/adminer-custom" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/collections" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/common" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/migrations" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/orm" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/instante/bootstrap-3-renderer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/instante/extended-form-macros" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/instante/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kdyby/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kdyby/console" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kdyby/doctrine" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kdyby/doctrine-cache" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kdyby/events" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kdyby/fake-session" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/latte/latte" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/nesbot/carbon" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/application" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/caching" />
@@ -28,22 +45,51 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/security" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/tester" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ocramius/proxy-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/dependency-injection" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/tracy/tracy" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/twbs/bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-code" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-eventmanager" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zenify/doctrine-migrations" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="PHP">
         <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/arachne/container-adapter" />
+          <root url="file://$MODULE_DIR$/vendor/arachne/event-dispatcher" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/dg/adminer-custom" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/annotations" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/cache" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/collections" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/common" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/dbal" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/migrations" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/orm" />
           <root url="file://$MODULE_DIR$/vendor/instante/bootstrap-3-renderer" />
           <root url="file://$MODULE_DIR$/vendor/instante/extended-form-macros" />
           <root url="file://$MODULE_DIR$/vendor/instante/utils" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby/annotations" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby/console" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby/doctrine" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby/doctrine-cache" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/events" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/fake-session" />
           <root url="file://$MODULE_DIR$/vendor/latte/latte" />
+          <root url="file://$MODULE_DIR$/vendor/nesbot/carbon" />
           <root url="file://$MODULE_DIR$/vendor/nette/application" />
           <root url="file://$MODULE_DIR$/vendor/nette/bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/nette/caching" />
@@ -62,18 +108,47 @@
           <root url="file://$MODULE_DIR$/vendor/nette/security" />
           <root url="file://$MODULE_DIR$/vendor/nette/tester" />
           <root url="file://$MODULE_DIR$/vendor/nette/utils" />
+          <root url="file://$MODULE_DIR$/vendor/ocramius/proxy-manager" />
+          <root url="file://$MODULE_DIR$/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/console" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/debug" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/dependency-injection" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/event-dispatcher" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/tracy/tracy" />
           <root url="file://$MODULE_DIR$/vendor/twbs/bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/zendframework/zend-code" />
+          <root url="file://$MODULE_DIR$/vendor/zendframework/zend-eventmanager" />
+          <root url="file://$MODULE_DIR$/vendor/zenify/doctrine-migrations" />
         </CLASSES>
         <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/arachne/container-adapter" />
+          <root url="file://$MODULE_DIR$/vendor/arachne/event-dispatcher" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/dg/adminer-custom" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/annotations" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/cache" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/collections" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/common" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/dbal" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/migrations" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/orm" />
           <root url="file://$MODULE_DIR$/vendor/instante/bootstrap-3-renderer" />
           <root url="file://$MODULE_DIR$/vendor/instante/extended-form-macros" />
           <root url="file://$MODULE_DIR$/vendor/instante/utils" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby/annotations" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby/console" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby/doctrine" />
+          <root url="file://$MODULE_DIR$/vendor/kdyby/doctrine-cache" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/events" />
           <root url="file://$MODULE_DIR$/vendor/kdyby/fake-session" />
           <root url="file://$MODULE_DIR$/vendor/latte/latte" />
+          <root url="file://$MODULE_DIR$/vendor/nesbot/carbon" />
           <root url="file://$MODULE_DIR$/vendor/nette/application" />
           <root url="file://$MODULE_DIR$/vendor/nette/bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/nette/caching" />
@@ -92,8 +167,30 @@
           <root url="file://$MODULE_DIR$/vendor/nette/security" />
           <root url="file://$MODULE_DIR$/vendor/nette/tester" />
           <root url="file://$MODULE_DIR$/vendor/nette/utils" />
+          <root url="file://$MODULE_DIR$/vendor/ocramius/proxy-manager" />
+          <root url="file://$MODULE_DIR$/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/console" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/debug" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/dependency-injection" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/event-dispatcher" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/tracy/tracy" />
           <root url="file://$MODULE_DIR$/vendor/twbs/bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/zendframework/zend-code" />
+          <root url="file://$MODULE_DIR$/vendor/zendframework/zend-eventmanager" />
+          <root url="file://$MODULE_DIR$/vendor/zenify/doctrine-migrations" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/vendor/symfony/dependency-injection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/vendor/symfony/dependency-injection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
         </SOURCES>
       </library>
     </orderEntry>

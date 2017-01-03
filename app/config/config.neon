@@ -14,12 +14,13 @@ application:
 
 
 session:
-	autoStart: off #remove?
+	autoStart: true #remove?
 	expiration: 14 days
 
 
 services:
 	- App\Model\UserManager
+	- App\Model\UserMailer
 	- App\Forms\FormFactory
 	- App\Forms\SignInFormFactory
 	- App\Forms\SignUpFormFactory
@@ -29,11 +30,32 @@ services:
 
 extensions:
 	events: Kdyby\Events\DI\EventsExtension
-	fakeSession: Kdyby\FakeSession\DI\FakeSessionExtension
+	#fakeSession: Kdyby\FakeSession\DI\FakeSessionExtension
 	extendedFormMacros: Instante\ExtendedFormMacros\DI\ExtendedFormMacrosExtension
+	console: Kdyby\Console\DI\ConsoleExtension
+	annotations: Kdyby\Annotations\DI\AnnotationsExtension
+	doctrine: Kdyby\Doctrine\DI\OrmExtension
+	- Arachne\ContainerAdapter\DI\ContainerAdapterExtension
+	- Arachne\EventDispatcher\DI\EventDispatcherExtension
+	migrations: Zenify\DoctrineMigrations\DI\MigrationsExtension
 
 
 events:
 	subscribers:
 		- App\Api\ErrorPresenterListener
 		- App\Api\DisableSessionListener
+
+doctrine:
+	user: doctrine
+	password: '***'
+	dbname: doctrine_online
+	metadata:
+		App: %appDir%
+
+migrations:
+	table: doctrine_migrations # database table for applied migrations
+	column: version # database column for applied migrations
+	directory: %appDir%/../migrations # directory, where all migrations are stored
+	namespace: Migrations # namespace of migration classes
+	codingStandard: tabs # or "spaces", coding style for generated classes
+	versionsOrganization: null # null, "year" or "year_and_month", organizes migrations to subdirectories

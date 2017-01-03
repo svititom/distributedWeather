@@ -1,0 +1,4 @@
+{block content}
+{control commandForm}
+{/block}
+<div n:foreach="$flashes as $flash" n:class="post, $flash->type"><p>{$flash->message|noescape|breaklines}</p></div>

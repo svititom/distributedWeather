@@ -2,7 +2,14 @@
 
 namespace App\Model;
 
+use App\Entities\User;
+use Instante\Helpers\MissingValueException;
+use Kdyby\Doctrine\EntityManager;
+use Latte\Engine;
 use Nette;
+use Nette\Mail\Message;
+use Nette\Mail\SendmailMailer;
+use Nette\Mail\SmtpMailer;
 use Nette\Security\Passwords;
 
 
@@ -13,22 +20,43 @@ class UserManager implements Nette\Security\IAuthenticator
 {
 	use Nette\SmartObject;
 
-	const
-		TABLE_NAME = 'users',
-		COLUMN_ID = 'id',
-		COLUMN_NAME = 'username',
-		COLUMN_PASSWORD_HASH = 'password',
-		COLUMN_EMAIL = 'email',
-		COLUMN_ROLE = 'role';
-
-
-	/** @var Nette\Database\Context */
-	private $database;
-
-
-	public function __construct(Nette\Database\Context $database)
+	/**
+	 * @param $username
+	 *
+	 * @return null|User
+	 */
+	public function findUserByUsername($username)
 	{
-		$this->database = $database;
+		return $this->em->getRepository(User::class)->findOneBy(array('name' => $username));
+	}
+
+	/**
+	 * @param $email
+	 * @return null|User
+	 */
+	public function findUserByEmail($email){
+		return $this->em->getRepository(User::class)->findOneBy(array('email' => $email));
+
+	}
+
+	/**
+	 *
+	 * @var \Kdyby\Doctrine\EntityManager
+	 *
+	 */
+	public $em;
+
+	/**
+	 * @var UserMailer
+	 */
+	private  $userMailer;
+
+
+
+	public function __construct(UserMailer $userMailer, \Kdyby\Doctrine\EntityManager $em)
+	{
+		$this->userMailer = $userMailer;
+		$this->em = $em;
 	}
 
 
@@ -41,25 +69,40 @@ class UserManager implements Nette\Security\IAuthenticator
 	{
 		list($username, $password) = $credentials;
 
-		$row = $this->database->table(self::TABLE_NAME)->where(self::COLUMN_NAME, $username)->fetch();
 
-		if (!$row) {
+		$user = $this->findUserByUsername($username);
+
+		if (!$user) {
 			throw new Nette\Security\AuthenticationException('The username is incorrect.', self::IDENTITY_NOT_FOUND);
 
-		} elseif (!Passwords::verify($password, $row[self::COLUMN_PASSWORD_HASH])) {
+		} elseif (!$user->authenticate($password)) {
 			throw new Nette\Security\AuthenticationException('The password is incorrect.', self::INVALID_CREDENTIAL);
 
-		} elseif (Passwords::needsRehash($row[self::COLUMN_PASSWORD_HASH])) {
-			$row->update([
-				self::COLUMN_PASSWORD_HASH => Passwords::hash($password),
-			]);
 		}
+		//flush in case password was rehashed
+		$this->em->flush($user);
 
-		$arr = $row->toArray();
-		unset($arr[self::COLUMN_PASSWORD_HASH]);
-		return new Nette\Security\Identity($row[self::COLUMN_ID], $row[self::COLUMN_ROLE], $arr);
+		//$arr = $row->toArray();
+		//unset($arr[self::COLUMN_PASSWORD_HASH]);
+		//todo create a new identity object
+		return new Nette\Security\Identity($user->getId(), $user->getRole(), NULL);
+
 	}
 
+
+	/**
+	 * @param $email users email todo deprecate username
+	 * @param $hash - verification hash in db
+	 * @param $password - new password
+	 */
+	public function resetPassword($email, $hash, $password) {
+		$user = $this->findUserByEmail($email);
+		$user->resetPassword($hash, $password);
+	}
+
+	public function sendResetMail($email){
+		//todo implement
+	}
 
 	/**
 	 * Adds new user.
@@ -69,22 +112,44 @@ class UserManager implements Nette\Security\IAuthenticator
 	 * @return void
 	 * @throws DuplicateNameException
 	 */
-	public function add($username, $email, $password)
+	public function addUser($username, $email, $password)
 	{
-		try {
-			$this->database->table(self::TABLE_NAME)->insert([
-				self::COLUMN_NAME => $username,
-				self::COLUMN_PASSWORD_HASH => Passwords::hash($password),
-				self::COLUMN_EMAIL => $email,
-			]);
-		} catch (Nette\Database\UniqueConstraintViolationException $e) {
-			throw new DuplicateNameException;
-		}
+			if($this->findUserByUsername($username) or $this->findUserByEmail($email)){
+				throw new DuplicateNameException();
+			}
+
+			$user = new User($username, $email, $password, User::ROLE_USER);
+			$this->em->persist($user);
+			$this->em->flush($user);
+			$this->userMailer->sendVerificationMail($user->generateVerificationHash(), $email);
 	}
+
+
+	/**
+	 * @param $email
+	 * @param $hash
+	 * @return bool
+	 * @throws UserNotFoundException
+	 */
+	public function verifyUser($email, $hash){
+		$user = $this->findUserByEmail($email);
+		if(!$user){
+			throw new UserNotFoundException();
+		}
+		return $user->verify($hash);
+	}
+
+
+
 
 }
 
 
-
 class DuplicateNameException extends \Exception
+{}
+class DuplicateEmailException extends \Exception
+{}
+class ExpiredLinkException extends \Exception
+{}
+class UserNotFoundException extends \Exception
 {}

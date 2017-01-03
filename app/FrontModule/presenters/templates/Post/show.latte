@@ -1,17 +1,16 @@
 {block content}
+<link href="{$basePath}/css/signin.css" rel="stylesheet">
 
 <!--p><a n:href="Homepage:default">← back to listing</a></p-->
 
-<div class="date">{$post->created_at|date:'F j, Y'}</div>
 
 <h1 n:block="title">{$post->title}</h1>
 <h2><a n:href="edit $post->id" n:if="$user->isInRole('admin')">Edit post</a></h2>
 <div class="post">{$post->content}</div>
+<div class="date">- {$post->created_at|date:'F j, Y'}</div>
 
 <h2>Add a new comment</h2>
-{if $user->loggedIn}
 {control commentForm}
-{/if}
 <h2>Comments</h2>
 <div class="comments">
     {foreach $comments as $comment}

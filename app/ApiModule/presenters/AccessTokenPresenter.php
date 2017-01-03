@@ -27,7 +27,6 @@ class AccessTokenPresenter extends BasePresenter
 	const PLACEHOLDER_API_ACCESS_TOKEN_DO_NOT_USE_ON_PRODUCTION = 'abcd';
 
 
-
 	public function actionCreate()
 	{
 		if (!$username = $this->request->getPost('username')) {

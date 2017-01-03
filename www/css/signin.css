@@ -1,11 +1,12 @@
 body {
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 40px;
   background-color: #eee;
 }
 
-.form-group.required {
+.form-group {
   max-width: 330px;
+  margin-bottom: 0px;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
@@ -16,4 +17,7 @@ body {
 }
 .form-signin .form-control:focus {
   z-index: 2;
+}
+input.btn.btn-primary {
+  margin-top: 15px;
 }

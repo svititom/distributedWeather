@@ -23,7 +23,7 @@ class RouterFactory
 		$api[] = new RestRoute('/api/shows[/<id>]', 'Shows:');
 
 		$router[] = $modules = new RouteList('Admin');
-		$modules[] = new Route('/admin', 'Cli:default');
+		$modules[] = new Route('/admin/<presenter>/<action>', 'Cli:default');
 
 		$router[] = $front = new RouteList('Front');
 //		$front[] = new Route('<presenter>/<action> ? email=<email> & hash=<hash>', 'Sign:verify');

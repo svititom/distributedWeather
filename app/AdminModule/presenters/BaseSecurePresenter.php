@@ -9,16 +9,16 @@
 namespace App\AdminModule\Presenters;
 
 
-class AdminBasePresenter extends \App\BasePresenter
+abstract class BaseSecurePresenter extends \App\BasePresenter
 {
 	function startup(){
 		parent::startup();
 		if (!$this->getUser()->isLoggedIn()){
 			$this->flashMessage('You need to be logged in before using the admin module');
-			$this->redirect(':Front:Sign:In');
+			$this->redirect(':Front:Sign:In', array('backlink' => $this->storeRequest()));
 		} else if (!$this->getUser()->isInRole('admin')){
 			$this->flashMessage('You need to be in the admin role to access the admin module');
-			$this->redirect(':Front:Sign:In');
+			$this->redirect(':Front:Sign:In', array('backlink' => $this->storeRequest()));
 		}
 
 	}

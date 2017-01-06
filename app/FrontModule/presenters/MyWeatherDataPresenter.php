@@ -8,14 +8,9 @@ use App\Model;
 
 class MyWeatherDataPresenter extends \App\BasePresenter
 {
-    private $database;
 
 	/** @var \Instante\ExtendedFormMacros\IFormFactory @inject */
 	public $formFactory;
-
-    public function __construct(Nette\Database\Context $database)
-    {
-    }
 
     protected function createComponentWeatherForm() {
     	$form = $this->formFactory->create();

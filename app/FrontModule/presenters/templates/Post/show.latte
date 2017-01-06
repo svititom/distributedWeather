@@ -4,17 +4,19 @@
 <!--p><a n:href="Homepage:default">← back to listing</a></p-->
 
 
-<h1 n:block="title">{$post->title}</h1>
-<h2><a n:href="edit $post->id" n:if="$user->isInRole('admin')">Edit post</a></h2>
-<div class="post">{$post->content}</div>
-<div class="date">- {$post->created_at|date:'F j, Y'}</div>
+<h1 n:block="title">{$post->getTitle()}</h1>
+{if $user->isInRole('admin')}
+<h3><a n:href="edit $post->getId()" n:if="$user->isInRole('admin')">Edit post</a> <a n:href="delete $post->getId()">Delete post </a></span></h3>
+{/if}
+<div class="post">{$post->getContent()}</div>
+<div class="date">- {$post->getCreatedOn()|date:'F j, Y'}</div>
 
 <h2>Add a new comment</h2>
 {control commentForm}
 <h2>Comments</h2>
 <div class="comments">
     {foreach $comments as $comment}
-    <p><b><a href="mailto:{$comment->email}" n:tag-if="$comment->email">{$comment->name}</a></b> wrote:</p>
-    <div>{$comment->content}</div>
+    <p><b><a href="mailto:{$comment->getEmail()}" n:tag-if="$comment->getEmail()">{$comment->getUserName()}</a></b> wrote:</p>
+    <div>{$comment->getContent()}</div>
     {/foreach}
 </div>

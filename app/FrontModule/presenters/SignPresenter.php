@@ -25,7 +25,7 @@ class SignPresenter extends \App\BasePresenter
 
 
 	const PASSWORD_MIN_LENGTH = 7;
-
+	//todo figure out why admin module is not redirecting back
 	public function signInSuccess($form, $values){
 		try {
 			$this->user->setExpiration($values->remember ? '14 days' : '20 minutes');

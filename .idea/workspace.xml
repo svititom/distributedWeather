@@ -2,31 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eae80ce3-0efa-4201-bce0-c31c69080fdd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/presenters/AdminBasePresenter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/presenters/templates/Cli/default.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/Entities/Device/Device.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/User/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/User/UserMailer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/User/templates/emailForgot.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/User/templates/emailVerify.latte" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/Command/DeleteTempCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/presenters/templates/@layout.latte" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/Entities/Article/Article.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/Entities/Article/ArticleManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/Entities/Article/Comment.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/model/Article.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/model/ArticleManager.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/Version20170102125203.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/Version20170102125348.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/Version20170102134209.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/Version20170102134244.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/Version20170102134320.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/AdminModule/presenters/AdminBasePresenter.php" afterPath="$PROJECT_DIR$/app/AdminModule/presenters/BaseSecurePresenter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/untitled.iml" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ApiModule/presenters/AccessTokenPresenter.php" afterPath="$PROJECT_DIR$/app/ApiModule/presenters/AccessTokenPresenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AdminModule/presenters/CliPresenter.php" afterPath="$PROJECT_DIR$/app/AdminModule/presenters/CliPresenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AdminModule/presenters/templates/Cli/default.latte" afterPath="$PROJECT_DIR$/app/AdminModule/presenters/templates/Cli/default.latte" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/HomepagePresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/HomepagePresenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/MyWeatherDataPresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/MyWeatherDataPresenter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/PostPresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/PostPresenter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/templates/@layout.latte" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/templates/@layout.latte" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/templates/Homepage/default.latte" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/templates/Homepage/default.latte" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/show.latte" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/show.latte" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/in.latte" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/in.latte" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bootstrap.php" afterPath="$PROJECT_DIR$/app/bootstrap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.neon" afterPath="$PROJECT_DIR$/app/config/config.neon" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/forms/SignUpFormFactory.php" afterPath="$PROJECT_DIR$/app/forms/SignUpFormFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/UserManager.php" afterPath="$PROJECT_DIR$/app/model/UserManager.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/router/RouterFactory.php" afterPath="$PROJECT_DIR$/app/router/RouterFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/create-user.php" afterPath="$PROJECT_DIR$/bin/create-user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/dashboard.css" afterPath="$PROJECT_DIR$/www/css/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/signin.css" afterPath="$PROJECT_DIR$/www/css/signin.css" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,57 +65,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CliPresenter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/CliPresenter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="e#45#67#0#PHP" expanded="true" />
-                <marker date="1483374641547" expanded="true" signature="996:1008" ph="..." />
-                <marker date="1483374641547" expanded="true" signature="1072:1082" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AboutPresenter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/AboutPresenter.php">
+      <file leaf-file-name="BaseSecurePresenter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/BaseSecurePresenter.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RouterFactory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/router/RouterFactory.php">
+      <file leaf-file-name="PostPersist.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/PostPersist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminBasePresenter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/AdminBasePresenter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-              <folding>
-                <element signature="e#6#86#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.latte" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/templates/Cli/default.latte">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="104" selection-start-line="3" selection-start-column="104" selection-end-line="3" selection-end-column="104" />
+            <state relative-caret-position="153">
+              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -119,48 +88,50 @@
       <file leaf-file-name="PostPresenter.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/PostPresenter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="94" column="33" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="33" />
+            <state relative-caret-position="144">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <folding>
+                <element signature="e#46#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.local.neon" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.local.neon">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.latte" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/show.latte">
+      <file leaf-file-name="config.neon" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/config.neon">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="@layout.latte" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/@layout.latte">
+      <file leaf-file-name="exception.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log/exception.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="88" column="18" selection-start-line="88" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="19" column="129" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="129" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.latte" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/create.latte">
+      <file leaf-file-name="MyWeatherDataPresenter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/MyWeatherDataPresenter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Component.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Component.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="346" column="20" selection-start-line="346" selection-start-column="20" selection-end-line="346" selection-end-column="20" />
+            <state relative-caret-position="187">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -177,31 +148,31 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="../../php/php.exe ./www/index.php orm:schema-tool:create --dump-sql" />
-      <command text="composer require nesbot/carbon" />
-      <command text="c:\users/swith/xampp/php/php.exe composer require nesbot/carbon" />
-      <command text="php" />
-      <command text="php composer." />
-      <command text="php composer" />
-      <command text="composer require nesbot/carbon" />
-      <command text="php " />
-      <command text="php ./www/index.php" />
-      <command text="migrations:diff" />
+      <command text="php ./www/index.php app:delete-temp" />
       <command text="php ./www/index.php migrations:diff" />
-      <command text="php ./www/index.php migrations" />
+      <command text="php ./www/index.php migrations:migrate" />
+      <command text="php ./www/index.php app:delete-tem" />
+      <command text="php ./www/index.php migrations:diff" />
+      <command text="php ./www/index.php migrations:migrate" />
+      <command text="php ./www/index.php migrations:diff" />
+      <command text="php ./www/index.php migrations:generate" />
+      <command text="php ./www/index.php migrations:migrate" />
+      <command text="php ./www/index.php app:delete-temp" />
+      <command text="php ./www/index.php migrations:diff" />
+      <command text="php ./www/index.php app:delete-temp" />
+      <command text="php ./www/index.php migrations:diff" />
+      <command text="php ./www/index.php migrations:migrate" />
+      <command text="php ./www/index.php app:delete-temp" />
+      <command text="php ./www/index.php migrations:Diff" />
       <command text="php ./www/index.php migrations:diff" />
       <command text="php ./www/index.php migrations:generate" />
       <command text="php ./www/index.php migrations:diff" />
+      <command text="php ./www/index.php app:delete-temp" />
+      <command text="php ./www/index.php migrations:diff" />
+      <command text="php ./www/index.php app:" />
+      <command text="php ./www/index.php " />
+      <command text="php ./www/index.php migrations:diff" />
       <command text="php ./www/index.php migrations:migrate" />
-      <command text="y" />
-      <command text="php Passwords::hash('hhhhhhhh')" />
-      <command text="php ./www/index.php migration:generate" />
-      <command text="php ./www/index.php migration:migrate" />
-      <command text="php ./www/index.php migration:generate" />
-      <command text="php ./www/index.php migration:migrate" />
-      <command text="php ./www/index.php migration:generate" />
-      <command text="php -v" />
-      <command text="php ./www/index.php" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -209,61 +180,62 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response9.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/BasePresenter.php" />
-        <option value="$PROJECT_DIR$/app/bootstrap.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/HomepagePresenter.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/ErrorPresenter.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/Error4xxPresenter.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/AboutPresenter.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Homepage/default.latte" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/edit.latte" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/MyWeatherDataPresenter.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/MyWeatherDataPresenter.php" />
-        <option value="$PROJECT_DIR$/app/forms/SignInFormFactory.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/up.latte" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/MyWeatherData/default.latte" />
-        <option value="$PROJECT_DIR$/www/css/dashboard.css" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/@layout.latte" />
-        <option value="$PROJECT_DIR$/app/ApiModule/presenters/AccessTokenPresenter.php" />
-        <option value="$PROJECT_DIR$/www/css/signin.css" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/PostPresenter.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/verifySuccess.latte" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/testMail.latte" />
-        <option value="$PROJECT_DIR$/app/model/email.latte" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/verify.latte" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/in.latte" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/forgot.latte" />
         <option value="$PROJECT_DIR$/app/model/templates/emailForgot.latte" />
-        <option value="$PROJECT_DIR$/app/config/config.local.neon" />
         <option value="$PROJECT_DIR$/app/model/article.php" />
-        <option value="$PROJECT_DIR$/app/model/Article.php" />
         <option value="$PROJECT_DIR$/app/model/templates/emailVerify.latte" />
         <option value="$PROJECT_DIR$/app/model/MailManager.php" />
         <option value="$PROJECT_DIR$/app/model/Entities/EnumType.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/model/Entities/Device/Device.php" />
-        <option value="$PROJECT_DIR$/app/model/Entities/Device/Measurement.php" />
         <option value="$PROJECT_DIR$/app/model/Entities/User/User.php" />
         <option value="$PROJECT_DIR$/app/model/User.php" />
         <option value="$PROJECT_DIR$/app/model/User/UserUserMailManager.php" />
         <option value="$PROJECT_DIR$/app/model/User/UserMailManager.php" />
         <option value="$PROJECT_DIR$/app/model/User/UserMailer.php" />
         <option value="$PROJECT_DIR$/app/model/User/UserManager.php" />
-        <option value="$PROJECT_DIR$/app/config/config.neon" />
         <option value="$PROJECT_DIR$/app/model/UserManager.php" />
         <option value="$PROJECT_DIR$/app/model/User/User.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php" />
-        <option value="$PROJECT_DIR$/app/AdminModule/presenters/BasePresenter.php" />
-        <option value="$PROJECT_DIR$/app/router/RouterFactory.php" />
-        <option value="$PROJECT_DIR$/app/AdminModule/presenters/AdminBasePresenter.php" />
         <option value="$PROJECT_DIR$/app/AdminModule/presenters/templates/default.latte" />
-        <option value="$PROJECT_DIR$/app/AdminModule/presenters/CliPresenter.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/show.latte" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php" />
+        <option value="$PROJECT_DIR$/app/AdminModule/presenters/AdminBasePresenter.php" />
+        <option value="$PROJECT_DIR$/app/AdminModule/presenters/templates/@layout.latte" />
+        <option value="$PROJECT_DIR$/app/AdminModule/presenters/AuthorizedPresenter.php" />
         <option value="$PROJECT_DIR$/app/AdminModule/presenters/templates/Cli/default.latte" />
+        <option value="$PROJECT_DIR$/app/ApiModule/presenters/DataPresenter.php" />
+        <option value="$PROJECT_DIR$/app/bootstrap.php" />
+        <option value="$PROJECT_DIR$/app/AdminModule/ConsoleCommands/DeleteTempFiles.php" />
+        <option value="$PROJECT_DIR$/app/AdminModule/ConsoleCommands/DeleteTempCommand.php" />
+        <option value="$PROJECT_DIR$/app/AdminModule/Command/DeleteTempCommand.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/HomepagePresenter.php" />
+        <option value="$PROJECT_DIR$/app/model/ArticleManager.php" />
+        <option value="$PROJECT_DIR$/app/model/Article.php" />
+        <option value="$PROJECT_DIR$/app/model/Entities/Device/Measurement.php" />
+        <option value="$PROJECT_DIR$/app/model/Comment.php" />
+        <option value="$PROJECT_DIR$/app/model/Entities/Article/Article.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Homepage/default.latte" />
+        <option value="$PROJECT_DIR$/app/model/Entities/Article/Comment.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/show.latte" />
+        <option value="$PROJECT_DIR$/app/BaseSecurePresenter.php" />
+        <option value="$PROJECT_DIR$/app/AdminModule/presenters/BasePresenter.php" />
+        <option value="$PROJECT_DIR$/app/AdminModule/presenters/BaseSecurePresenter.php" />
+        <option value="$PROJECT_DIR$/app/router/RouterFactory.php" />
+        <option value="$PROJECT_DIR$/app/AdminModule/presenters/CliPresenter.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/delete.latte" />
+        <option value="$PROJECT_DIR$/app/model/Entities/Article/ArticleManager.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/PostPresenter.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/MyWeatherDataPresenter.php" />
+        <option value="$PROJECT_DIR$/app/config/config.local.neon" />
+        <option value="$PROJECT_DIR$/migrations/Version20170104101736.php" />
+        <option value="$PROJECT_DIR$/log/exception.log" />
+        <option value="$PROJECT_DIR$/app/config/config.neon" />
       </list>
     </option>
   </component>
@@ -280,7 +252,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/nette/robot-loader" />
       <path value="$PROJECT_DIR$/vendor/nette/reflection" />
@@ -342,7 +314,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -353,6 +325,9 @@
         <expanded-state>
           <State>
             <id />
+          </State>
+          <State>
+            <id>Code StylePHP</id>
           </State>
           <State>
             <id>DOM issuesJavaScript</id>
@@ -367,10 +342,28 @@
             <id>GeneralJavaScript</id>
           </State>
           <State>
+            <id>GeneralPHP</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
             <id>JavaScript</id>
           </State>
           <State>
+            <id>Less</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
             <id>SQL</id>
+          </State>
+          <State>
+            <id>Sass/SCSS</id>
+          </State>
+          <State>
+            <id>UndefinedPHP</id>
           </State>
         </expanded-state>
         <selected-state>
@@ -406,7 +399,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -435,35 +427,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="temp" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="cache" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -478,10 +446,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="router" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -521,7 +485,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="User" />
+              <option name="myItemId" value="Entities" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -570,6 +534,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontModule" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presenters" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sign" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -617,11 +611,19 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ApiModule" />
+              <option name="myItemId" value="FrontModule" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="presenters" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Homepage" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -672,41 +674,318 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminModule" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presenters" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Cli" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminModule" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="netteSandbox">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="netteSandbox">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="vendor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="netteSandbox">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="netteSandbox">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="netteSandbox">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="FrontModule">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="presenters">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="netteSandbox">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="FrontModule">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="presenters">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="templates">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="netteSandbox">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="AdminModule">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="presenters">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="post&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/PostPresenter.php&#10;renderDefault&#9;null&#9;null&#10;conf&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.neon&#10;sign&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/SignPresenter.php&#10;usermanag&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/UserManager.php&#10;use&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/User/User.php&#10;signprese&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/SignPresenter.php&#10;userma&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/UserManager.php&#10;userman&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/UserManager.php&#10;user&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/User/User.php&#10;config&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.neon&#10;measu&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/Entities/Device/Measurement.php&#10;composer.j&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/composer.json&#10;.json&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/composer.json&#10;confi&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.neon&#10;neon&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.neon&#10;comp&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/composer.json&#10;usermana&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/UserManager.php&#10;'Username is already taken.'&#9;null&#9;null&#10;roles&#9;null&#9;null&#10;signup&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/forms/SignUpFormFactory.php&#10;@lay&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/templates/@layout.latte&#10;weathe&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/temp/cache/latte/templates-MyWeatherData-default.latte--bf53545db1.php&#10;config.neo&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.neon&#10;postpres&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/PostPresenter.php&#10;bootstrap.p&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/bootstrap.php&#10;nette\config&#9;null&#9;null&#10;depl&#9;ACTION&#9;PublishGroup.SyncLocalVsRemoteWith&#10;database&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;debug&#9;null&#9;null&#10;footer&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/vendor/twbs/bootstrap/docs/_includes/footer.html&#10;layout&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/presenters/templates/@layout.latte&#10;index&#9;FILE&#9;file://C:/Users/swith/AppData/Local/Temp/index.html&#10;formfactory&#9;null&#9;null&#10;@layout.&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/presenters/templates/@layout.latte&#10;bootstrap.js&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/vendor/twitter/bootstrap/docs/dist/js/bootstrap.js&#10;bootstrap js&#9;null&#9;null&#10;homepage&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/presenters/HomepagePresenter.php&#10;config.neon&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.neon&#10;authenticate&#9;null&#9;null&#10;implements NS\IAuthenticator&#9;null&#9;null&#10;authenticator&#9;null&#9;null&#10;neo&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.local.neon&#10;home&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/presenters/HomepagePresenter.php&#10;.php&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="ex&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/log/exception.log&#10;con&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.neon&#10;excep&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/log/exception.log&#10;config&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.neon&#10;myweather&#9;null&#9;null&#10;confi&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.local.neon&#10;postprese&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/PostPresenter.php&#10;postper&#9;null&#9;null&#10;post&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/PostPresenter.php&#10;articlema&#9;null&#9;null&#10;arti&#9;null&#9;null&#10;routerf&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/router/RouterFactory.php&#10;articl&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/Entities/Article/ArticleManager.php&#10;artic&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/Entities/Article/Article.php&#10;smartobje&#9;null&#9;null&#10;article&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/Entities/Article/Article.php&#10;comment&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/Entities/Article/Comment.php&#10;except&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/log/exception.log&#10;art&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/Entities/Article/ArticleManager.php&#10;po&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/PostPresenter.php&#10;home&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/HomepagePresenter.php&#10;hom&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/HomepagePresenter.php&#10;config.loc&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.local.neon&#10;config.neo&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.neon&#10;conf&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.local.neon&#10;index.php&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/www/index.php&#10;config.lo&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.local.neon&#10;neon&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.neon&#10;config.neon&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.neon&#10;bootstr&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/bootstrap.php&#10;bootstrap.php&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/bootstrap.php&#10;configurator&#9;null&#9;null&#10;deployment&#9;ACTION&#9;QuickList.Deployment&#10;config.l&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/config/config.local.neon&#10;default&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/templates/Homepage/default.latte&#10;postpr&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/PostPresenter.php&#10;signpr&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/SignPresenter.php&#10;renderDefault&#9;null&#9;null&#10;sign&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/SignPresenter.php&#10;usermanag&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/UserManager.php&#10;use&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/User/User.php&#10;signprese&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/FrontModule/presenters/SignPresenter.php&#10;userma&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/UserManager.php&#10;userman&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/UserManager.php&#10;user&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/User/User.php&#10;measu&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/Entities/Device/Measurement.php&#10;composer.j&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/composer.json&#10;.json&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/composer.json&#10;comp&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/composer.json&#10;usermana&#9;FILE&#9;file://C:/Users/swith/xampp/htdocs/netteSandbox/app/model/UserManager.php" />
     <property name="nodejs_interpreter_path" value="C:/Program Files (x86)/nodejs/node" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/log" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\www\css" />
-      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\FrontModule\presenters\WeatherData" />
-      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\libs" />
-      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\www\bootstrap\css" />
-      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\www\bootstrap\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\model\Entities\Article" />
+      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\FrontModule\presenters\templates" />
+      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\AdminModule\presenters\templates" />
       <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\AdminModule\presenters\templates\Cli" />
       <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app" />
-      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\model\User" />
-      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\model" />
-      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\model\Entities\User" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app" />
+      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\model\User\templates" />
+      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\AdminModule\presenters\templates" />
+      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\www\css" />
+      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\FrontModule\presenters\WeatherData" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1484675027000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="gm98fv01in0180r5icnql2g3n2" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/api/access_token" />
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="username: me" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1484675010000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="gm98fv01in0180r5icnql2g3n2" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/api/access_token" />
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="username:me" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1484674970000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="PHPSESSID" />
+                <option name="path" value="/" />
+                <option name="value" value="gm98fv01in0180r5icnql2g3n2" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/api/access_token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="me" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="you" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/api/access_token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/vendor/twbs/bootstrap/docs/examples/starter-template/index.html">
@@ -770,6 +1049,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR,VISIBILITY_SORTER" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -791,36 +1073,38 @@
       <workItem from="1482987686147" duration="8502000" />
       <workItem from="1483074779388" duration="9452000" />
       <workItem from="1483358487560" duration="13576000" />
+      <workItem from="1483424331095" duration="27695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116783000" />
+    <option name="totallyTimeSpent" value="144478000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32462686" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46965098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25083613" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294423" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48049054" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294423" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25641027" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23187633" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46965098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49546045" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50453955" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -875,343 +1159,15 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/testMail.latte" />
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/verifyResult.latte" />
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/verify.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/in.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Sign/forgot.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/User/templates/emailForgot.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/date.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/InvalidLinkException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.local.neon">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/kdyby/doctrine/src/Kdyby/Doctrine/Entities/BaseEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/ArticleManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/HomepagePresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="46" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="46" />
-          <folding>
-            <element signature="e#46#93#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Entities/EnumType.php" />
-    <entry file="file://$PROJECT_DIR$/log/exception--2016-12-30--12-21--e8a0210432.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/kdyby/doctrine/src/Kdyby/Doctrine/Entities/MagicAccessors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/Measurement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-          <folding>
-            <element signature="e#125#162#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/Device.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#125#167#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/kdyby/doctrine/src/Kdyby/Doctrine/EntityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/dg/adminer-custom/adminer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_types.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/security/src/Security/Identity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/User/UserMailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <element signature="e#109#126#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/exception--2017-01-02--20-45--eed19cdfb3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/zenify/doctrine-migrations/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="1483006886804" expanded="true" signature="1075:1353" ph="extensions: &lt;2 items&gt;" />
-              <marker date="1483006886804" expanded="true" signature="1090:1143" ph="Arachne\Co..." />
-              <marker date="1483006886804" expanded="true" signature="1147:1198" ph="Arachne\Ev..." />
-              <marker date="1483006886804" expanded="true" signature="1212:1260" ph="Zenify\Doc..." />
-              <marker date="1483006886804" expanded="true" signature="1323:1353" ph="Kdyby\Doct..." />
-              <marker date="1483006886804" expanded="true" signature="1421:1794" ph="migrations: &lt;6 keys&gt;" />
-              <marker date="1483006886804" expanded="true" signature="1441:1460" ph="doctrine_m..." />
-              <marker date="1483006886804" expanded="true" signature="1510:1517" ph="version" />
-              <marker date="1483006886804" expanded="true" signature="1571:1593" ph="%appDir%/...." />
-              <marker date="1483006886804" expanded="true" signature="1651:1661" ph="Migrations" />
-              <marker date="1483006886804" expanded="true" signature="1712:1716" ph="tabs" />
-              <marker date="1483006886804" expanded="true" signature="1790:1794" ph="null" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/User/templates/emailVerify.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/password.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/Version20170102134244.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/Version20170102125348.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1483361628390" expanded="true" signature="573:627" ph="ALTER TABLE user... " />
-            <marker date="1483361628390" expanded="true" signature="981:1016" ph="ALTER TABLE user... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/Version20170102125203.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="72" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/Version20170102134320.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/UserManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
-          <folding>
-            <element signature="e#29#51#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/Version20170102134209.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/security/src/Security/Passwords.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/User/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
-          <folding>
-            <element signature="e#113#145#0#PHP" expanded="true" />
-            <element signature="e#234#344#0#PHP" expanded="false" />
-            <element signature="e#1103#1145#0#PHP" expanded="false" />
-            <element signature="e#1314#1437#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/forms/src/Forms/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="233" column="20" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/nette/http/src/Http/IResponse.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Presenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="688" column="62" selection-start-line="688" selection-start-column="62" selection-end-line="688" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.neon">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1226,16 +1182,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Component.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="5831">
           <caret line="346" column="20" selection-start-line="346" selection-start-column="20" selection-end-line="346" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/router/RouterFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1248,56 +1196,390 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/AdminBasePresenter.php">
+    <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/templates/@layout.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/@layout.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="1496">
           <caret line="88" column="18" selection-start-line="88" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/CliPresenter.php">
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/@layout.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#45#67#0#PHP" expanded="true" />
-            <marker date="1483374641547" expanded="true" signature="996:1008" ph="..." />
-            <marker date="1483374641547" expanded="true" signature="1072:1082" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/PostPresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="94" column="33" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/show.latte">
+    <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/AuthorizedPresenter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="102">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Presenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1435">
+          <caret line="596" column="20" selection-start-line="596" selection-start-column="20" selection-end-line="596" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/BasePresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+          <folding>
+            <element signature="e#297#307#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/ShowsPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/DataPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/bootstrap/src/Bootstrap/Configurator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/instante/utils/src/Helpers/FileSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Command/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1717">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="911" column="9" selection-start-line="911" selection-start-column="9" selection-end-line="911" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/utils/src/Utils/FileSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-603">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AdminModule/Command/DeleteTempCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+          <folding>
+            <element signature="e#111#143#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/Version20170103165032.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/Version20170104090942.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/Measurement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/Device.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/utils/src/Utils/SmartObject.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="137" column="5" selection-start-line="135" selection-start-column="34" selection-end-line="137" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Article/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+          <folding>
+            <element signature="e#104#114#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/utils/src/Utils/ArrayHash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-365">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/BasePresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/BaseSecurePresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/router/RouterFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Homepage/default.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/templates/Cli/default.latte">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/HomepagePresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/CliPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/templates/@layout.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="83" column="17" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/show.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="82" selection-start-line="8" selection-start-column="82" selection-end-line="8" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/edit.latte">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="104" selection-start-line="3" selection-start-column="104" selection-end-line="3" selection-end-column="104" />
+          <caret line="3" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/delete.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Article/ArticleManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="67" column="40" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
+          <folding>
+            <element signature="e#111#127#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Article/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding>
+            <element signature="e#102#120#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/BaseSecurePresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/PostPersist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/PostPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="e#46#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/MyWeatherDataPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.local.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/Version20170106075931.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/Version20170106075844.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/Version20170104101736.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/exception.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="129" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
           <folding />
         </state>
       </provider>

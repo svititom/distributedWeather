@@ -1,4 +1,12 @@
 {block content}
 {control commandForm}
+<div n:class="post">
+	<span style="color: {$statusColor}")>
+		<b>Status Code:{$statusCode}</b>
+	</span>
+</div>
+
+<div n:class="post">{$CliOutput|breaklines}</div>
+
+
 {/block}
-<div n:foreach="$flashes as $flash" n:class="post, $flash->type"><p>{$flash->message|noescape|breaklines}</p></div>

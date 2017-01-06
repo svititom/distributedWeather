@@ -47,8 +47,9 @@ events:
 
 doctrine:
 	user: doctrine
-	password: '***'
-	dbname: doctrine_online
+	password: snthsnth
+	dbname: weatherdb
+	host: innodb.endora.cz
 	metadata:
 		App: %appDir%
 

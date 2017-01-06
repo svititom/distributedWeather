@@ -2,6 +2,9 @@
 
 namespace App\FrontModule\Presenters;
 
+use App\Article;
+use App\Comment;
+use Kdyby\Doctrine\EntityManager;
 use Nette;
 use App\Model;
 use Nette\Application\UI\Form;
@@ -10,28 +13,48 @@ use Nette\Http\IResponse;
 
 class PostPresenter extends Nette\Application\UI\Presenter
 {
-    private $database;
+    private $em;
 
 	/** @var  \Instante\Bootstrap3Renderer\BootstrapFormFactory @inject */
 	public $formFactory;
+	public $ArticleManager;
 
-    public function commentFormSucceeded($form, $values)
+
+
+	public function __construct(EntityManager $em, Model\ArticleManager $articleManager)
+	{
+
+		$this->em = $em;
+		$this->ArticleManager = $articleManager;
+	}
+
+	public function commentFormSucceeded($form, $values)
     {
-
+    /*	if(!$values->email){
+    		$values->email = ' ';
+		}
+    */
     	$postId = $this->getParameter('postId');
+		$comment = new Comment($values->name, $values->email, $values->content);
+		$this->ArticleManager->addComment($postId, $comment);
 
-        $this->database->table('comments')->insert([
-            'post_id' => $postId,
-            'name'  => $values->name,
-            'email' => $values->email,
-            'content' => $values->content,
-        ]);
-
-        $this->flashMessage('Thanks for commenting', 'success');
+		$this->flashMessage('Thanks for commenting', 'success');
         $this->redirect('this');
     }
 
-    protected function createComponentCommentForm()
+    protected function createComponentDeleteForm()
+	{
+		$form = $this->formFactory->create();
+		$form->addSubmit('delete', 'Delete article');
+		$form->onSuccess[] = function ($form, $values){
+			$this->ArticleManager->deletArticle($this->getParameter('postId'));
+			$this->flashMessage('Deleted successfully');
+			$this->redirect(':Front:Home');
+		};
+		return $form;
+	}
+
+	protected function createComponentCommentForm()
     {
 
         $form = $this->formFactory->create();
@@ -49,17 +72,20 @@ class PostPresenter extends Nette\Application\UI\Presenter
         return $form;
     }
 
+	/**
+	 * @param $form
+	 * @param Nette\Utils\ArrayHash $values
+	 */
     public function postFormSucceeded($form, $values)
     {
         $postId = $this->getParameter('postId');
-        if($postId){
-            $post = $this->database->table('posts')->get($postId);
-            $post->update($values);
+		if($postId){
+			$this->ArticleManager->updateArticle($postId, $values->title, $values->content);
         } else {
-            $post = $this->database->table('posts')->insert($values);
-        }
+           	$this->ArticleManager->createArticle($values->title, $values->content);
+		}
         $this->flashMessage('Posted successfully!', 'success');
-        $this->redirect('show',$post->id);
+        $this->redirect('show',$postId);
     }
     protected function createComponentPostForm()
     {
@@ -85,34 +111,35 @@ class PostPresenter extends Nette\Application\UI\Presenter
     }
     public function actionEdit($postId){
         if(!$this->getUser()->isLoggedIn()){
-            $this->redirect('Sign:in');
+            $this->redirect(':Front:Sign:in');
         }
         if(!$this->getUser()->isInRole('admin')){
         	$this->error('Only admins can edit posts', Nette\Http\IResponse::S403_FORBIDDEN);
 		}
-        $post = $this->database->table('posts')->get($postId);
+
+        $post = $this->ArticleManager->getArticleById($postId);
         if(!$post){
             $this->error('Article not found');
         }
-        $this['postForm']->setDefaults($post->toArray());
+        $this['postForm']->setDefaults([
+        	'title' => $post->getTitle(),
+			'content' => $post->getContent(),
+		]);
     }
 
-    public function __construct(Nette\Database\Context $database)
-    {
-        $this->database = $database;
-    }
+    public function actionDelete($postId){
 
+	}
 
 
     public function renderShow($postId)
 	{
-	    $post = $this->database->table('posts')->get($postId);
-        if(!$post){
+		$post = $this->ArticleManager->getArticleById($postId);
+	    if(!$post){
             $this->error('Page not found');
         }
-
         $this->template->post = $post;
-		$comments = $post->related('comment')->order('created_at');
+		$comments = $post->getComments();
 		if($comments){
 			$this->template->comments = $comments;
 		}

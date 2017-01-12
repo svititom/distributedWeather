@@ -6,7 +6,9 @@
  * Time: 23:09
  */
 namespace App;
+use app\model\Entities\BaseEntity;
 use Carbon\Carbon;
+use Kdyby\Doctrine\Entities\Attributes\Identifier;
 use Nette;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -15,16 +17,12 @@ use Doctrine\ORM\Mapping\OneToMany;
 /**
  * @ORM\Entity
  */
-class Article
+class Article extends BaseEntity
 {
 	use Nette\SmartObject;
+	use Identifier;
 
-	/**
-	 * @ORM\Id
-	 * @ORM\Column(type="integer")
-	 * @ORM\GeneratedValue
-	 */
-	protected $id;
+
 
 	/**
 	 * @ORM\Column(type="string")
@@ -64,7 +62,7 @@ class Article
 	{
 		$this->title = $title;
 		$this->content = $content;
-		$this->createdOn = Carbon::now();
+		$this->createdOn = Carbon::now()->toDateTimeString();
 	}
 
 
@@ -83,9 +81,7 @@ class Article
 	}
 
 
-	public function getId(){
-		return $this->id;
-	}
+
 	/**
 	 * @return null|string
 	 */

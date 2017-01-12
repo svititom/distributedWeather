@@ -13,6 +13,7 @@ use App\Article;
 use App\Comment;
 use Doctrine\Common\Cache\ArrayCache;
 use Kdyby\Doctrine\EntityManager;
+use Kdyby\Doctrine\ResultSet;
 use Nette;
 
 class ArticleManager
@@ -30,12 +31,12 @@ class ArticleManager
     }
 
 	/**
-	 * @return Article[]
+	 * @return ResultSet
 	 */
     public function getPublicArticles()
     {
-    	return $this->em->getRepository(Article::class)->findAll();
-
+    	$articleRepository = $this->em->getRepository(Article::class);
+		return $articleRepository->findBy([],['createdOn' => 'DESC']);
     }
 
 	/**
@@ -62,7 +63,7 @@ class ArticleManager
 		}
 	}
 
-	public function deletArticle($articleId){
+	public function deleteArticle($articleId){
 		$article = $this->getArticleById($articleId);
 		foreach ($article->getComments() as $comment){
 			$this->em->remove($comment);
@@ -84,10 +85,12 @@ class ArticleManager
 	/**
 	 * @param $title
 	 * @param $content
+	 * @return $id of new entitity
 	 */
 	public function createArticle($title, $content){
 		$article = new Article($title, $content);
 		$this->em->persist($article);
 		$this->em->flush($article);
+		return $article->getId();
 	}
 }

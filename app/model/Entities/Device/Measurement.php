@@ -7,9 +7,11 @@
  */
 
 namespace App\Model\Entities\Device;
+use app\model\Entities\BaseEntity;
 use App\Model\Entities\Device\Device;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\ManyToOne;
+use Kdyby\Doctrine\Entities\Attributes\Identifier;
 use Kdyby\Doctrine\Entities\MagicAccessors;
 
 
@@ -17,10 +19,9 @@ use Kdyby\Doctrine\Entities\MagicAccessors;
  * @ORM\Entity
  */
 
-class Measurement
+class Measurement extends BaseEntity
 {
-
-	use \Kdyby\Doctrine\Entities\Attributes\Identifier; // Using Identifier trait for id column
+	use Identifier;
 
 	/**
 	 * @ORM\ManyToOne(targetEntity="Device", inversedBy="Measurement")

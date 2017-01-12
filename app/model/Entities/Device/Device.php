@@ -7,9 +7,11 @@
  */
 
 namespace App\Model\Entities\Device;
+use app\model\Entities\BaseEntity;
 use App\Model\Entities\Device\Measurement;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\OneToMany;
+use Kdyby\Doctrine\Entities\Attributes\Identifier;
 use Kdyby\Doctrine\Entities\MagicAccessors;
 
 
@@ -18,11 +20,10 @@ use Kdyby\Doctrine\Entities\MagicAccessors;
  * @package App\Model\Entities\Device
  * @ORM\Entity
  */
-class Device
+class Device extends BaseEntity
 {
 	use \Nette\SmartObject;
-	use \Kdyby\Doctrine\Entities\Attributes\Identifier; // Using Identifier trait for id column
-
+	use Identifier;
 	/**
 	 * @ORM\Column(type="string")
 	 */
@@ -49,5 +50,6 @@ class Device
 	 * @OneToMany(targetEntity="App\Model\Entities\Device\Measurement", mappedBy="device")
 	 */
 	protected $measurements;
+
 
 }

@@ -47,11 +47,15 @@ class PostPresenter extends Nette\Application\UI\Presenter
 		$form = $this->formFactory->create();
 		$form->addSubmit('delete', 'Delete article');
 		$form->onSuccess[] = function ($form, $values){
-			$this->ArticleManager->deletArticle($this->getParameter('postId'));
+			$this->ArticleManager->deleteArticle($this->getParameter('postId'));
 			$this->flashMessage('Deleted successfully');
-			$this->redirect(':Front:Home');
+			$this->redirect('Homepage:');
 		};
 		return $form;
+	}
+
+	public function actionDelete($postId){
+
 	}
 
 	protected function createComponentCommentForm()
@@ -82,7 +86,7 @@ class PostPresenter extends Nette\Application\UI\Presenter
 		if($postId){
 			$this->ArticleManager->updateArticle($postId, $values->title, $values->content);
         } else {
-           	$this->ArticleManager->createArticle($values->title, $values->content);
+           	$postId = $this->ArticleManager->createArticle($values->title, $values->content);
 		}
         $this->flashMessage('Posted successfully!', 'success');
         $this->redirect('show',$postId);
@@ -127,10 +131,6 @@ class PostPresenter extends Nette\Application\UI\Presenter
 		]);
     }
 
-    public function actionDelete($postId){
-
-	}
-
 
     public function renderShow($postId)
 	{
@@ -140,9 +140,8 @@ class PostPresenter extends Nette\Application\UI\Presenter
         }
         $this->template->post = $post;
 		$comments = $post->getComments();
-		if($comments){
-			$this->template->comments = $comments;
-		}
+		$this->template->comments = $comments;
+
 	}
 
 }

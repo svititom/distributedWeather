@@ -8,7 +8,9 @@
 
 namespace App\Entities;
 
+use app\model\Entities\BaseEntity;
 use Doctrine\ORM\Mapping as ORM;
+use Kdyby\Doctrine\Entities\Attributes\Identifier;
 use Nette\Security\Passwords;
 use Carbon\Carbon;
 
@@ -16,8 +18,9 @@ use Carbon\Carbon;
 /**
  * @ORM\Entity
  */
-class User
+class User extends BaseEntity
 {
+	use Identifier;
 	/**
 	 * User constructor.
 	 * @param $name
@@ -74,11 +77,6 @@ class User
 		$this->passwordHash = Passwords::hash($password);
 	}
 
-
-
-
-
-	use \Kdyby\Doctrine\Entities\Attributes\Identifier; // Using Identifier trait for id column
 	/**
 	 * @ORM\Column(type="string")
 	 */

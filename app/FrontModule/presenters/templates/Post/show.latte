@@ -8,7 +8,7 @@
 {if $user->isInRole('admin')}
 <h3><a n:href="edit $post->getId()" n:if="$user->isInRole('admin')">Edit post</a> <a n:href="delete $post->getId()">Delete post </a></span></h3>
 {/if}
-<div class="post">{$post->getContent()}</div>
+<div class="post">{$post->getContent()|breaklines}</div>
 <div class="date">- {$post->getCreatedOn()|date:'F j, Y'}</div>
 
 <h2>Add a new comment</h2>
@@ -17,6 +17,6 @@
 <div class="comments">
     {foreach $comments as $comment}
     <p><b><a href="mailto:{$comment->getEmail()}" n:tag-if="$comment->getEmail()">{$comment->getUserName()}</a></b> wrote:</p>
-    <div>{$comment->getContent()}</div>
+    <div>{$comment->getContent()|breaklines}</div>
     {/foreach}
 </div>

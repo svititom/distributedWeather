@@ -8,23 +8,23 @@
 
 namespace App;
 
+use app\model\Entities\BaseEntity;
+use Kdyby\Doctrine\Entities\Attributes\Identifier;
 use Nette;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\ManyToOne;
-use Kdyby\Doctrine\Entities\Attributes\Identifier;
 
 /**
  * Class Comment
  * @package App
  * @ORM\Entity
  */
-class Comment
+class Comment extends BaseEntity
 {
 
 	use Nette\SmartObject;
 	use Identifier;
-
 	/**
 	 * @ORM\ManyToOne(targetEntity="Article", inversedBy="comments")
 	 */

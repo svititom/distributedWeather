@@ -15,7 +15,7 @@ Today, IoT (Internet of Things) is a big buzzword, but it means that it is posib
 
 ## 3. Band Hardware/Software
 
-//Waiting for all hardware to arrive
+*Update: Waiting for batteries to arrive, sadly ESP32 has very little bluetooth exapmles with full documentation, so I will have to study the bluetooth specification in some detail to create a working connection. It is a question whether to create the device as a weather beacon i.e. nonconnectable device which periodically transmits data or a connectable device which sends data only on request by the smartphone/controller app. The first approach would mean __maybe__ less work, but higher power consumption, ballpark maths puts it in days with a single 150mAh battery. The second approach will mean understanding the whole BLE 'stack' i.e. GATT and GAP, but most probably the power consumption will be much lower.*
 
 - [ ] Bluetooth connection
 - [ ] Interfacing with BME280
@@ -76,10 +76,10 @@ __How to keep data?__
 As they come with all info?
 Use location to sort into 'location bins' and remove accurate location?
 
-- [ ] Frontend Presentation (Home, About, etc.)
+- [-] Frontend Presentation (Home, About, etc.) * in progress, data presentation needs to be done*
 - [ ] Frontend data access 
 - [ ] Frontend/Backend API (POST?)
-- [ ] Backend database
+- [x] Backend database *base is up, will be updated depending on the actual data from the sensor*
 
 
 ### Client side

@@ -62,7 +62,7 @@ class Article extends BaseEntity
 	{
 		$this->title = $title;
 		$this->content = $content;
-		$this->createdOn = Carbon::now()->toDateTimeString();
+		$this->createdOn = Carbon::now();
 	}
 
 

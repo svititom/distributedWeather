@@ -1,19 +1,18 @@
 {block content}
-    <h1 n:block="tile"> My blog</h1>
+    <h1 n:block="tile">News</h1>
 
     <a n:href="Post:create" n:if="$user->isInRole('admin')">Write new article</a>
     <br/>
     {foreach $posts as $post}
-        <h4>
+
         <div class="row">
-            <div class="col-md-1">
+            <div class="col-lg-8">
+                <h2>
                 <a n:href="Post:show $post->getId()">{$post->getTitle()}</a>
-            </div>
-            <div class="col-md-3">
-                -{$post->getCreatedOn()|date:'F j, Y H:m'}
+                </h2>
+                - {$post->getCreatedOn()|date:'F j, Y H:m'}
             </div>
         </div>
-        </h4>
 
     {/foreach}
 {/block}

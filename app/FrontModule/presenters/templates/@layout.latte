@@ -26,6 +26,16 @@
 
 <body>
 
+<div class="container">
+
+	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">
+		<div class="row">
+			<div class="col-md6">
+			<h4>{$flash->message}</h4>
+			</div>
+		</div>
+	</div>
+</div>
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
@@ -60,39 +70,18 @@
 		{include content}
 		<footer>
 			<div align="right" class="footer navbar-fixed-bottom">
-			<p>Tomas Svitil, 12016-17HE&nbsp&nbsp  </p>
+			<p>Site is under construction Tomas Svitil, 12016-17HE&nbsp&nbsp  </p>
 			</div>
 		</footer></div>
 
 	</div><!-- /.container -->
 
-
-	<!-- Bootstrap core JavaScript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-	<script src="{$basePath}/bootstrap/js/bootstrap.min.js"></script>
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="{$basePath}/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
-
-
-
-
-
-	<!--ul class="navig">
-		<li><a n:href="Homepage:">Articles</a></li>
-			<li><a n:href="Sign:out">Sign out</a></li>
-			<li><a n:href="Sign:in">Sign in</a></li>
-
-	</ul-->
-	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
-
-
 	{block scripts}
-	<!--script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
-	<script src="{$basePath}/js/main.js"></script->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="{$basePath}/bootstrap/js/bootstrap.min.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="{$basePath}/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
 	{/block}
 </body>
 </html>

@@ -4,7 +4,6 @@
     <list default="true" id="eae80ce3-0efa-4201-bce0-c31c69080fdd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/templates/About/default.latte" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/templates/About/default.latte" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,8 +84,8 @@
       <file leaf-file-name="default.latte" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/About/default.latte">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="51">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -155,14 +154,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php ./www/index.php " />
-      <command text="php ./www/index.php migrations:diff" />
-      <command text="php ./www/index.php migrations:migrate" />
-      <command text="git stage *" />
-      <command text="git commit -m &quot;Finally, hopefully everything is migrated to doctrine&quot;" />
-      <command text="php ../www/index.php" />
-      <command text="php /www/index.php" />
-      <command text="php www/index.php" />
       <command text="php www/index.php migrations:diff" />
       <command text="php www/index.php app:delete-temp" />
       <command text="php www/index.php migrations:diff" />
@@ -180,6 +171,14 @@
       <command text="git pull" />
       <command text="git pull origin master" />
       <command text="git push origin master" />
+      <command text="git stage *" />
+      <command text="git commit -m &quot;Added github links to about&quot;" />
+      <command text="git push" />
+      <command text="git push --set-upstream origin master" />
+      <command text="git commit -m &quot;Beautification&quot;" />
+      <command text="git push" />
+      <command text="git stage *" />
+      <command text="git push" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -868,12 +867,12 @@
       <workItem from="1483424331095" duration="30832000" />
       <workItem from="1484040048333" duration="1363000" />
       <workItem from="1484149941574" duration="12322000" />
-      <workItem from="1484482518875" duration="1150000" />
+      <workItem from="1484482518875" duration="1329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162450000" />
+    <option name="totallyTimeSpent" value="162629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -883,7 +882,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294423" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46965098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8632479" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.51965815" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33506945" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30030257" sideWeight="0.48625794" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1295,8 +1294,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/About/default.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="51">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding />
         </state>
       </provider>

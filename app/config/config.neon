@@ -46,10 +46,6 @@ events:
 		- App\Api\DisableSessionListener
 
 doctrine:
-	#user: doctrine
-	#password: snthsnth
-	#dbname: weatherdb
-	#host: innodb.endora.cz
 	metadata:
 		App: %appDir%
 

@@ -38,7 +38,7 @@ class UserMailer{
 		$mailer = new SmtpMailer([
 			'host' => 'smtp.gmail.com',
 			'username' => 'distributedweather@gmail.com',
-			'password' => 'This is such a secure password :3',
+			'password' => 'nightcrawler', //I should really pull this somewhere out ...
 			'secure' => 'ssl',
 		]);
 

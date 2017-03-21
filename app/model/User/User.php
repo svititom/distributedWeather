@@ -24,8 +24,17 @@ use Nette\Utils\Arrays;
  */
 class User extends BaseEntity
 {
-	use Identifier;
-	/**
+    //use Identifier;
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="guid")
+     * @ORM\GeneratedValue(strategy="UUID")
+     * @var string
+     */
+    private $id;
+
+
+    /**
 	 * User constructor.
 	 * @param $name
 	 * @param $email
@@ -158,6 +167,12 @@ class User extends BaseEntity
 	}
 
     /**
+     * @return string
+     */
+	public function getId() :string {
+	    return $this->id;
+    }
+    /**
      * @param string $deviceName
      * @return Device|null
      */
@@ -189,6 +204,7 @@ class User extends BaseEntity
     /**
      * @return Device[]
      */
+
     public function getDevices()
     {
         return $this->devices;

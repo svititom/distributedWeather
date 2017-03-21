@@ -33,10 +33,10 @@ class DeviceManager
     }
 
     /**
-     * @param int $id
+     * @param string $id
      * @return \App\Entities\Device|null
      */
-    public function findDeviceById(int $id): ? Device
+    public function findDeviceById(string $id): ? Device
     {
         return $this->em->getRepository(Device::class)->findOneBy(["id" => $id]);
     }
@@ -81,7 +81,7 @@ class DeviceManager
      * @param $deviceId
      * @throws NoSuchDeviceException
      */
-    public function removeDevice(int $deviceId)
+    public function removeDevice(string $deviceId)
     {
         $device = $this->findDeviceById($deviceId);
         if ($device == null) {

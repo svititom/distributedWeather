@@ -9,11 +9,13 @@
 namespace App\Entities;
 use app\model\Entities\BaseEntity;
 use App\Entities\Measurement;
+use Carbon\Carbon;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\OneToMany;
 use Kdyby\Doctrine\Entities\Attributes\Identifier;
 use Kdyby\Doctrine\Entities\MagicAccessors;
 use App\Entities\User;
+use Nette\Security\Passwords;
 
 
 /**
@@ -23,8 +25,22 @@ use App\Entities\User;
  */
 class Device extends BaseEntity
 {
+    //TODO Add store location for static devices (loc doesn't change)
 	use \Nette\SmartObject;
-	use Identifier;
+
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="guid")
+     * @ORM\GeneratedValue(strategy="UUID")
+     * @var string
+     */
+    private $id;
+
+
+    public function getId() :string{
+        return $this->id;
+    }
+
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entities\User", inversedBy="devices")
@@ -71,6 +87,11 @@ class Device extends BaseEntity
 	protected $authToken;
 
     /**
+     * @ORM\Column(type="datetime")
+     */
+    protected $authTokenExpiry;
+
+    /**
      * Device constructor.
      * @param $user
      * @param $name
@@ -89,8 +110,20 @@ class Device extends BaseEntity
         $this->temperatureAccuracy = $temperatureAccuracy;
         $this->humidityAccuracy = $humidityAccuracy;
         $this->pressureAccuracy = $pressureAccuracy;
+        $this->updateAuthToken($user->getId());
     }
 
+    public function updateAuthToken(string $userId){
+        $authTokenVersion = 1;
+        $expiry = new Carbon('next year');
+
+        //We might want to make the token half decryptable in the future, to verify it w/o accesing the db
+        $tokenUnencrypted = "exp=" . $expiry . ", ver=" . $authTokenVersion . ", " . Passwords::hash($userId);
+        $tokenEncrypted = Passwords::hash($tokenUnencrypted);
+
+        $this->authToken = $tokenEncrypted;
+        $this->authTokenExpiry = $expiry;
+    }
 
     public function getName()
     {
@@ -145,13 +178,6 @@ class Device extends BaseEntity
         return $this->pressureAccuracy;
     }
 
-    /**
-     * @return int
-     */
-    public function getId(): int
-    {
-        return $this->id;
-    }
 
     /**
      * @return mixed
@@ -160,6 +186,7 @@ class Device extends BaseEntity
     {
         return $this->authToken;
     }
+
 
 
 }

@@ -168,7 +168,7 @@ class UserManager implements Nette\Security\IAuthenticator
         $this->em->flush($user);
     }
 
-    public function getUserDevices(int $userId)
+    public function getUserDevices(string $userId)
     {
         $user = $this->findUserById($userId);
         return $user->getDevices();

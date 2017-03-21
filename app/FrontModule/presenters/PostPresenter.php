@@ -42,20 +42,20 @@ class PostPresenter extends Nette\Application\UI\Presenter
         $this->redirect('this');
     }
 
-    protected function createComponentDeleteForm()
-	{
-		$form = $this->formFactory->create();
-		$form->addSubmit('delete', 'Delete article');
-		$form->onSuccess[] = function ($form, $values){
-			$this->ArticleManager->deleteArticle($this->getParameter('postId'));
-			$this->flashMessage('Deleted successfully');
-			$this->redirect('Homepage:');
-		};
-		return $form;
-	}
+       protected function createComponentDeleteForm()
+    {
+        $form = $this->formFactory->create();
+        $form->addSubmit('delete', 'Delete article');
+        $form->onSuccess[] = function ($form, $values){
+            $this->ArticleManager->deleteArticle($this->getParameter('postId'));
+            $this->flashMessage('Deleted successfully');
+            $this->redirect('Homepage:');
+        };
+        return $form;
+    }
 
 	public function actionDelete($postId){
-
+        //button provided by deleteform
 	}
 
 	protected function createComponentCommentForm()

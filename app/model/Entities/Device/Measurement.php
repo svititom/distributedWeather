@@ -6,9 +6,9 @@
  * Time: 17:44
  */
 
-namespace App\Model\Entities\Device;
+namespace App\Entities;
 use app\model\Entities\BaseEntity;
-use App\Model\Entities\Device\Device;
+use App\Entities\Device;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\ManyToOne;
 use Kdyby\Doctrine\Entities\Attributes\Identifier;

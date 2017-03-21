@@ -8,11 +8,15 @@
 
 namespace App\Entities;
 
+use App\Model\DuplicateNameException;
 use app\model\Entities\BaseEntity;
+use App\Entities\Device;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\OneToMany;
 use Kdyby\Doctrine\Entities\Attributes\Identifier;
 use Nette\Security\Passwords;
 use Carbon\Carbon;
+use Nette\Utils\Arrays;
 
 
 /**
@@ -89,6 +93,12 @@ class User extends BaseEntity
 	 * @ORM\Column(type="string")
 	 */
 	protected $role;
+
+    /**
+     * @OneToMany(targetEntity="App\Entities\Device", mappedBy="user")
+     * @var Device[]
+     */
+	protected $devices;
 	/**
 	 * @ORM\Column(type="string", length=255)
 	 * @var string
@@ -108,6 +118,8 @@ class User extends BaseEntity
 	 * @var bool
 	 */
 	protected $userVerified;
+
+
 
 
 	const ROLE_USER = 'user';
@@ -144,6 +156,58 @@ class User extends BaseEntity
 	public function getRole(){
 		return $this->role;
 	}
+
+    /**
+     * @param string $deviceName
+     * @return Device|null
+     */
+	public function findDeviceByName(string $deviceName){
+	    return Arrays::get($this->devices, $deviceName);
+    }
+
+    /**
+     * @param string $deviceName
+     * @return bool
+     */
+    public function hasDevice(string $deviceName)
+    {
+        return $this->devices[$deviceName] != null;
+        //return Arrays::get($this->devices, $deviceName) != null;
+    }
+
+    /**
+     * @param Device $device
+     * @throws DuplicateNameException
+     */
+	public function addDevice(Device $device){
+	    if($this->hasDevice($device->getName())){
+	        throw new DuplicateNameException();
+        }
+	    $this->devices[$device->getName()] = $device;
+    }
+
+    /**
+     * @return Device[]
+     */
+    public function getDevices()
+    {
+        return $this->devices;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function removeDevice(string $deviceName){
+       unset($this->devices[$deviceName]);
+    }
+
+
+
 }
 
 class InvalidVerificationHashException extends \Exception

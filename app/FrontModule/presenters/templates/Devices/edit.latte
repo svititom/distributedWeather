@@ -1,0 +1,19 @@
+{block content}
+    <h2>Under construction</h2>
+    <h2><a n:href="Devices:">Return</a></h2>
+    {if $device != null}
+    <table>
+    <tr>
+        <td>{$device->getName()}</td>
+        <td>{$device->getModel()}</td>
+        <td>{$device->getVendor()}</td>
+        <td>{$device->getTemperatureAccuracy()}</td>
+        <td>{$device->getHumidityAccuracy()}</td>
+        <td>{$device->getPressureAccuracy()}</td>
+        <td>{$device->getAuthToken()}</td>
+        <td><a n:href="delete $device->getId()">remove</a></td>
+
+    </tr>
+    </table>
+        {/if}
+{/block}

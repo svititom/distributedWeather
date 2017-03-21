@@ -40,7 +40,7 @@ class HomepagePresenter extends \App\BasePresenter
     public function renderDefault()
 	{
 		$this->template->posts = $this->articleManager->getPublicArticles();
-
+        $this->template->userIdentity = $this->getUser()->getId();
 	}
 
 }

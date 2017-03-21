@@ -12,7 +12,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!--link rel="icon" href="../../favicon.ico"-->
-	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette Sandbox</title>
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Distributed Weather</title>
 	<!-- Bootstrap core CSS -->
 	<link href="{$basePath}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -46,20 +46,24 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" n:href=":Front:Homepage:">Distributed Weather</a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li><a n:href=":Front:Homepage:">Home</a></li>
-					<li><a n:href=":Front:MyWeatherData:">My data</a></li>
-					<li><a n:href=":Front:About:">About</a></li>
 					{if !$user->loggedIn}
 						<li><a n:href=":Front:Sign:in">Sign in</a></li>
 						<li><a n:href=":Front:Sign:up">Sign up</a></li>
 					{else}
+						<li><a n:href=":Front:MyWeatherData:">My data</a></li>
+						<li><a n:href=":Front:Devices:">My devices</a></li>
 						<li><a n:href=":Front:Sign:out">Sign out</a></li>
+
 					{/if}
+					<li><a n:href=":Front:About:">About</a></li>
+
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>

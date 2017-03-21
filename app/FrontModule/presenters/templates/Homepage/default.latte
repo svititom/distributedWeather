@@ -2,6 +2,8 @@
     <h1 n:block="tile">News</h1>
 
     <a n:href="Post:create" n:if="$user->isInRole('admin')">Write new article</a>
+    <li>You are logged in as: {$userIdentity}</li>
+
     <br/>
     {foreach $posts as $post}
 

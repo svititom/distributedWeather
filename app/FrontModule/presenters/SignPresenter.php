@@ -51,7 +51,7 @@ class SignPresenter extends \App\BasePresenter
 			->setRequired('Please enter your password.')
 			->setAttribute('placeholder', 'Password');
 		$form->addCheckbox('remember', 'Keep me signed in');
-		$form->addProtection('Please try again');
+		$form->addProtection('You have been logged out due to a timeout');
 		$form->addSubmit('send', 'Sign in');
 
 		$form->onSuccess[] = [$this, 'signInSuccess'];

@@ -108,6 +108,8 @@ class User extends BaseEntity
      * @var Device[]
      */
 	protected $devices;
+
+
 	/**
 	 * @ORM\Column(type="string", length=255)
 	 * @var string

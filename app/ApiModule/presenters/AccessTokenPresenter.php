@@ -15,6 +15,7 @@ use Nette\Security\User;
 
 
 /**
+ *
  * @author Filip Procházka <filip@prochazka.su>
  */
 class AccessTokenPresenter extends BasePresenter
@@ -36,6 +37,10 @@ class AccessTokenPresenter extends BasePresenter
 		if (!$password = $this->request->getPost('password')) {
 			$this->error("Missing field 'password'", IResponse::S400_BAD_REQUEST);
 		}
+
+		if (!$deviceName = $this->request->getPost('device_name')){
+		    $this->error("Missing field 'device_name", IResponse::S400_BAD_REQUEST);
+        }
 
 		try {
 

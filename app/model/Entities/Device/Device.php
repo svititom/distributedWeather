@@ -119,7 +119,7 @@ class Device extends BaseEntity
 
         //We might want to make the token half decryptable in the future, to verify it w/o accesing the db
         $tokenUnencrypted = "exp=" . $expiry . ", ver=" . $authTokenVersion . ", " . Passwords::hash($userId);
-        $tokenEncrypted = Passwords::hash($tokenUnencrypted);
+        $tokenEncrypted = sha1($tokenUnencrypted);
 
         $this->authToken = $tokenEncrypted;
         $this->authTokenExpiry = $expiry;
@@ -186,6 +186,16 @@ class Device extends BaseEntity
     {
         return $this->authToken;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getAuthTokenExpiry()
+    {
+        return $this->authTokenExpiry;
+    }
+
+
 
 
 

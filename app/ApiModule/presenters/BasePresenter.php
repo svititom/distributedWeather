@@ -34,6 +34,7 @@ abstract class BasePresenter extends \App\BasePresenter
 	 * @var string[]
 	 */
 	private static $actionMap = [
+	    /** whats the difference between read and read all? ~ */
 		'read' => IRequest::GET,
 		'readAll' => IRequest::GET,
 		'create' => IRequest::POST,

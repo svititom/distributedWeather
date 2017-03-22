@@ -8,6 +8,9 @@
 
 namespace App\ApiModule\Presenters;
 
+use App\Entities\DeviceManager;
+use App\Entities\NoSuchDeviceException;
+use App\Model\UserManager;
 use Nette;
 use Nette\Http\IResponse;
 use Nette\Security\User;
@@ -21,43 +24,73 @@ use Nette\Security\User;
 class AccessTokenPresenter extends BasePresenter
 {
 
-	/**
-	 * Disclaimer: it's not my fault if you're dumb.
-	 * I'm lazy to save it in database.
-	 */
-	const PLACEHOLDER_API_ACCESS_TOKEN_DO_NOT_USE_ON_PRODUCTION = 'abcd';
+    /**
+     * Disclaimer: it's not my fault if you're dumb.
+     * I'm lazy to save it in database.
+     */
+    const PLACEHOLDER_API_ACCESS_TOKEN_DO_NOT_USE_ON_PRODUCTION = 'abcd';
 
+    /**
+     * @var DeviceManager devicemanager @inject
+     */
+    public $deviceManager;
 
-	public function actionCreate()
-	{
-		if (!$username = $this->request->getPost('username')) {
-			$this->error("Missing field 'username'", IResponse::S400_BAD_REQUEST);
-		}
+    public function actionRead()
+    {
+        list($username, $password, $deviceName) = $this->checkCallParameters($this->getHttpRequest()->getHeaders());
+        try {
 
-		if (!$password = $this->request->getPost('password')) {
-			$this->error("Missing field 'password'", IResponse::S400_BAD_REQUEST);
-		}
+            $this->user->login($username, $password);
+            $this->payload->access_token =  $this->deviceManager->getDeviceAuthToken($username, $deviceName);
+            $this->success();
+        } catch (NoSuchDeviceException $e){
+            $this->error("No such device, did you use device id instead of name by mistake?", IResponse::S404_NOT_FOUND);
+        } catch (Nette\Security\AuthenticationException $e) {
+            $this->error("Invalid credentials", IResponse::S401_UNAUTHORIZED);
+        }
+    }
 
-		if (!$deviceName = $this->request->getPost('device_name')){
-		    $this->error("Missing field 'device_name", IResponse::S400_BAD_REQUEST);
+    public function actionReadAll()
+    {
+        $this->actionRead();
+    }
+
+    public function actionCreate()
+    {
+        //this is a post, so it generates a completely new token
+        list($username, $password, $deviceName) = $this->checkCallParameters($this->getHttpRequest()->getHeaders());
+
+        try {
+
+            $this->user->login($username, $password);
+            $this->payload->access_token =  $this->deviceManager->updateDeviceAuthToken($username, $deviceName);
+            $this->success();
+
+        } catch (NoSuchDeviceException $e){
+            $this->error("No such device, did you use device id instead of name by mistake?", IResponse::S404_NOT_FOUND);
+        } catch (Nette\Security\AuthenticationException $e) {
+            $this->error("Invalid credentials", IResponse::S401_UNAUTHORIZED);
+        }
+    }
+
+    /**
+     * @return array
+     */
+    public function checkCallParameters( array $headers): array
+    {
+        if (!$username = $headers['username']) {
+            $this->error("Missing field 'username'", IResponse::S400_BAD_REQUEST);
         }
 
-		try {
+        if (!$password = $headers['password']) {
+            $this->error("Missing field 'password'", IResponse::S400_BAD_REQUEST);
+        }
 
-			$this->user->login($username, $password);
-
-			$this->payload->user = [
-				'username' => $this->user->id,
-			];
-			$this->payload->access_token = [
-				'token' => self::PLACEHOLDER_API_ACCESS_TOKEN_DO_NOT_USE_ON_PRODUCTION,
-				'expiration' => (new \DateTime('+1 day'))->format('Y-m-d H:i:s')
-			];
-			$this->success();
-
-		} catch (Nette\Security\AuthenticationException $e) {
-			$this->error("Invalid credentials", IResponse::S401_UNAUTHORIZED);
-		}
-	}
+        if (!$deviceName = $headers['devicename']) {
+            $this->error("Missing field 'devicename", IResponse::S400_BAD_REQUEST);
+            return array($username, $password, $deviceName);
+        }
+        return array($username, $password, $deviceName);
+    }
 
 }

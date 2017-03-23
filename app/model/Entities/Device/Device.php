@@ -88,6 +88,7 @@ class Device extends BaseEntity
 
     /**
      * @ORM\Column(type="datetime")
+     * @var \DateTime
      */
     protected $authTokenExpiry;
 
@@ -115,7 +116,7 @@ class Device extends BaseEntity
 
     public function updateAuthToken(string $userId){
         $authTokenVersion = 1;
-        $expiry = new Carbon('next year');
+        $expiry = new Carbon('next week');
 
         //We might want to make the token half decryptable in the future, to verify it w/o accesing the db
         $tokenUnencrypted = "exp=" . $expiry . ", ver=" . $authTokenVersion . ", " . Passwords::hash($userId);
@@ -190,13 +191,15 @@ class Device extends BaseEntity
     /**
      * @return mixed
      */
-    public function getAuthTokenExpiry()
+    public function getAuthTokenExpiry() : ?Carbon
     {
-        return $this->authTokenExpiry;
+        return  Carbon::instance($this->authTokenExpiry);
     }
 
-
-
-
-
+    public function addMeasurement(Measurement $measurement)
+    {
+        //todo validate measurements
+        $this->measurements[] = $measurement;
+    }
 }
+class InvalidDeviceSettingsException extends \Exception {}

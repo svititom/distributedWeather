@@ -8,11 +8,11 @@
 
 namespace App\ApiModule\Presenters;
 
+use App\Entities\DeviceManager;
 use Nette;
 use Nette\Http\IRequest;
 use Nette\Http\IResponse;
 use Tracy\Debugger;
-
 
 
 /**
@@ -21,10 +21,19 @@ use Tracy\Debugger;
 abstract class BasePresenter extends \App\BasePresenter
 {
 
+
+
 	const HTTP_HEADER_ALLOW = "Access-Control-Allow-Methods";
-	const HEADER_AUTHORIZATION = 'X-Api-Authorization';
+	const HEADER_AUTHORIZATION = 'auth-token';
 
 	/**
+     * @var DeviceManager @inject
+     */
+	public $deviceManager;
+
+
+
+    /**
 	 * @var Nette\Application\Application
 	 * @inject
 	 */
@@ -46,20 +55,13 @@ abstract class BasePresenter extends \App\BasePresenter
 
 	protected function startup()
 	{
-		Debugger::$productionMode = TRUE;
+		Debugger::$productionMode = FALSE;
 
 		parent::startup();
 
 		if (!$this->isMethodAllowed($this->getAction())) {
 			$this->getHttpResponse()->addHeader(self::HTTP_HEADER_ALLOW, implode(", ", $this->getAllowedMethods()));
 			$this->error("Method '{$this->getAction()}' not allowed", IResponse::S405_METHOD_NOT_ALLOWED);
-		}
-
-		if ($token = $this->getHttpRequest()->getHeader(self::HEADER_AUTHORIZATION)) {
-			// magic
-			if ($token === AccessTokenPresenter::PLACEHOLDER_API_ACCESS_TOKEN_DO_NOT_USE_ON_PRODUCTION) {
-				$this->user->login(new Nette\Security\Identity('admin', []));
-			}
 		}
 	}
 
@@ -93,8 +95,9 @@ abstract class BasePresenter extends \App\BasePresenter
 	 */
 	private function isMethodAllowed($action)
 	{
-		return $this->reflection->hasMethod($this->formatActionMethod($action))
-			|| $this->reflection->hasMethod($this->formatRenderMethod($action));
+
+		return $this->getReflection()->hasMethod($this->formatActionMethod($action))
+			|| $this->getReflection()->hasMethod($this->formatRenderMethod($action));
 	}
 
 

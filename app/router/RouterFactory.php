@@ -19,8 +19,9 @@ class RouterFactory
 	{
 		$router = new RouteList;
 		$router[] = $api = new RouteList('Api');
-		$api[] = new RestRoute('/api/access_token', 'AccessToken:');
-		$api[] = new RestRoute('/api/shows[/<id>]', 'Shows:');
+	//	$api[] = new RestRoute('/api/access_token', 'AccessToken:');
+	//	$api[] = new RestRoute('/api/shows[/<id>]', 'Shows:');
+		$api[] = new RestRoute('/api/<presenter>', 'AccessToken:');
 
 		$router[] = $modules = new RouteList('Admin');
 		$modules[] = new Route('/admin/<presenter>/<action>', 'Cli:default');

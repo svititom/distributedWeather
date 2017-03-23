@@ -21,20 +21,17 @@ use Nette\Security\User;
  *
  * @author Filip Procházka <filip@prochazka.su>
  */
-class AccessTokenPresenter extends BasePresenter
+class AuthtokenPresenter extends BasePresenter
 {
-
-    /**
-     * Disclaimer: it's not my fault if you're dumb.
-     * I'm lazy to save it in database.
-     */
-    const PLACEHOLDER_API_ACCESS_TOKEN_DO_NOT_USE_ON_PRODUCTION = 'abcd';
 
     /**
      * @var DeviceManager devicemanager @inject
      */
     public $deviceManager;
 
+    /**
+     * Gets the existing Auth Token
+     */
     public function actionRead()
     {
         list($username, $password, $deviceName) = $this->checkCallParameters($this->getHttpRequest()->getHeaders());
@@ -55,6 +52,9 @@ class AccessTokenPresenter extends BasePresenter
         $this->actionRead();
     }
 
+    /**
+     * Generates a new Auth Token
+     */
     public function actionCreate()
     {
         //this is a post, so it generates a completely new token

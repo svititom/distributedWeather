@@ -13,6 +13,7 @@ use App\Entities\Device;
 use App\Entities\User;
 use App\Model\DuplicateNameException;
 use App\Model\UserManager;
+use Carbon\Carbon;
 use Doctrine\ORM\NoResultException;
 
 class DeviceManager
@@ -37,9 +38,18 @@ class DeviceManager
      * @param string $id
      * @return \App\Entities\Device|null
      */
-    public function findDeviceById(string $id): ? Device
+    protected function findDeviceById(string $id): ? Device
     {
         return $this->em->getRepository(Device::class)->findOneBy(["id" => $id]);
+    }
+
+    /**
+     * @param string $token
+     * @return \App\Entities\Device|null
+     */
+    private function findDeviceByToken(string $token) : ?Device
+    {
+        return $this->em->getRepository(Device::class)->findOneBy(['authToken' => $token]);
     }
 
 
@@ -111,21 +121,21 @@ class DeviceManager
      */
     public function removeDevice(string $deviceId)
     {
-        /**
-         * Disclaimer: it's not my fault if you're dumb.
-         * I'm lazy to save it in database.
-         */
-//        const PLACEHOLDER_API_ACCESS_TOKEN_DO_NOT_USE_ON_PRODUCTION = 'abcd';
         $device = $this->findDeviceById($deviceId);
         if ($device == null) {
             throw new NoSuchDeviceException();
         }
-        //todo make sure this removes it from the Users list
         $this->em->remove($device);
         $this->em->flush();
     }
 
-    public function updateDeviceAuthToken(string $username, string $devicename)
+    /**
+     * @param string $username
+     * @param string $devicename
+     * @return array
+     * @throws NoSuchDeviceException
+     */
+    public function updateDeviceAuthToken(string $username, string $devicename) : array
     {
         $device = $this->getDeviceByName($username, $devicename);
         if ($device == null){
@@ -138,6 +148,52 @@ class DeviceManager
 
     }
 
+    /**
+     * @param string $token
+     * @return \App\Entities\Device
+     * @throws InvalidAuthTokenException
+     */
+    private function verifyToken(string $token) : Device
+    {
+            $device = $this->findDeviceByToken($token);
+            //if no device found, the token is invalid
+            if ($device == null){
+                throw new InvalidAuthTokenException("Invalid token");
+            }
+            if ($device->getAuthTokenExpiry()->lt(Carbon::now())){
+                throw new InvalidAuthTokenException("Expired token");
+            }
+            return $device;
+    }
+
+    /**
+     * @param string $token
+     * @param array $measurements
+     */
+    public function addMeasurement(string $token, array $measurements)
+    {
+        $device = $this->verifyToken($token);
+        $measurement = new Measurement($device, $measurements);
+        $device->addMeasurement($measurement);
+
+        $this->em->persist($measurement);
+        $this->em->flush($measurement);
+        $this->em->flush($device);
+
+    }
+    public function getSupportedMeasurements() : array
+    {
+        return [
+            Measurement::KEY_TEMPERATURE,
+            Measurement::KEY_PRESSURE,
+            Measurement::KEY_HUMIDITY,
+            Measurement::KEY_LOCATION,
+            Measurement::KEY_LOCATION_ACC,
+            Measurement::KEY_DATETIME
+        ];
+    }
+
 }
 
 class NoSuchDeviceException extends \Exception{}
+class InvalidAuthTokenException extends \Exception{}

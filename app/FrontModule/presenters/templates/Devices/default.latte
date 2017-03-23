@@ -9,9 +9,9 @@
                 <th>Name</th>
                 <th>Model</th>
                 <th>Vendor</th>
-                <th>Temperature accuracy</th>
-                <th>Humidity accuracy</th>
-                <th>Pressure accuracy</th>
+                <th>Temperature<br>accuracy</th>
+                <th>Humidity<br>accuracy</th>
+                <th>Pressure<br>accuracy</th>
                 <th>Token</th>
                 <th>Actions</th>
             </tr>
@@ -22,16 +22,19 @@
                     <td><a n:href="Devices:edit $device->getId()">{$device->getName()}</a></td>
                     <td>{$device->getModel()}</td>
                     <td>{$device->getVendor()}</td>
-                    <td>{$device->getTemperatureAccuracy()}</td>
-                    <td>{$device->getHumidityAccuracy()}</td>
-                    <td>{$device->getPressureAccuracy()}</td>
+                    <td>±{$device->getTemperatureAccuracy()}°C</td>
+                    <td>±{$device->getHumidityAccuracy()}%RH</td>
+                    <td>±{$device->getPressureAccuracy()}hPa</td>
                     <td>{$device->getAuthToken()}</td>
                     <td><a n:href="delete $device->getId()">remove</a></td>
 
                 </tr>
             {/foreach}
+
             </tbody>
         </table>
+        <td><a n:href="add" class="btn btn-primary">New device</a></td>
+
     {else}
         <h4><p>You haven't added any devices yet :(</p><h4>
     {/if}

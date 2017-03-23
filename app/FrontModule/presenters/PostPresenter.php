@@ -100,6 +100,11 @@ class PostPresenter extends Nette\Application\UI\Presenter
         $form->addTextArea('content', 'Content:');
 
         $form->addSubmit('send', 'Post');
+        $form->addSubmit('cancel', 'Cancel')
+            ->setValidationScope(array())
+            ->onClick[] = function($sender){
+        $this->redirect('Homepage:');
+    };
 
         $form->onSuccess[] = [$this, 'postFormSucceeded'];
         return $form;

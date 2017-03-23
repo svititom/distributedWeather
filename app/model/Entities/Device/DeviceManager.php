@@ -38,9 +38,9 @@ class DeviceManager
      * @param string $id
      * @return \App\Entities\Device|null
      */
-    protected function findDeviceById(string $id): ? Device
+    public function findDeviceById(string $id): ? Device
     {
-        return $this->em->getRepository(Device::class)->findOneBy(["id" => $id]);
+        return $this->em->getRepository(Device::class)->findOneBy(['id' => $id]);
     }
 
     /**

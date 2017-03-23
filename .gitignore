@@ -6,3 +6,7 @@ vendor/*
 !web.config
 app/config/config.local.neon
 .idea
+/temp/
+temp/
+/migrations/
+/.idea/

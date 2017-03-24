@@ -42,7 +42,8 @@ class MeasurementPresenter extends BasePresenter
             $this->error($e->getMessage(), IResponse::S401_UNAUTHORIZED);
         }
         //$this->payload->access_token =  $this->deviceManager->updateDeviceAuthToken($username, $deviceName);
-        $this->success();
+
+        $this->success('Created', IResponse::S201_CREATED);
     }
 
     /**

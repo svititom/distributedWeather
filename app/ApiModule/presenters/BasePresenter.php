@@ -67,8 +67,9 @@ abstract class BasePresenter extends \App\BasePresenter
 
 
 
-	public function success($status = 'ok')
+	public function success($status = 'ok', $httpCode = IResponse::S200_OK)
 	{
+	    $this->getHttpResponse()->setCode($httpCode);
 		$this->payload->status = $status;
 		$this->sendPayload();
 	}

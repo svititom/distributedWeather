@@ -11,12 +11,12 @@ namespace App\Entities;
 
 interface EnvironmentMeasurements
 {
-    public const
+     const
         KEY_TEMPERATURE   = 'temperature',
         KEY_PRESSURE      = 'pressure',
         KEY_HUMIDITY      = 'humidity',
         KEY_LOCATION      = 'location',
-        KEY_LOCATION_ACC  = 'location_accuracy',
+        KEY_LOCATION_ACC  = 'locationaccuracy',
         KEY_DATETIME      = 'datetime';
 
 

@@ -37,8 +37,9 @@ class DeviceManager
     /**
      * @param string $id
      * @return \App\Entities\Device|null
+     * todo NOT SECURE! Anyone can access atm
      */
-    public function findDeviceById(string $id): ? Device
+    public function findDeviceById(string $id)
     {
         return $this->em->getRepository(Device::class)->findOneBy(['id' => $id]);
     }
@@ -47,7 +48,7 @@ class DeviceManager
      * @param string $token
      * @return \App\Entities\Device|null
      */
-    private function findDeviceByToken(string $token) : ?Device
+    private function findDeviceByToken(string $token)
     {
         return $this->em->getRepository(Device::class)->findOneBy(['authToken' => $token]);
     }
@@ -93,7 +94,8 @@ class DeviceManager
      * @param string $devicename
      * @return \App\Entities\Device|null
      */
-    public function getDeviceByName(string $username, string $devicename) : ?Device{
+    public function getDeviceByName(string $username, string $devicename)
+    {
         return $this->em->getRepository(Device::class)
                     ->findOneBy(['user.name' => $username,
                                  'name' => $devicename]);

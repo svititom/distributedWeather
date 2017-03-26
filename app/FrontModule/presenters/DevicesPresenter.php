@@ -99,6 +99,14 @@ class DevicesPresenter extends BaseSecurePresenter
 
     public function actionDelete($deviceId){
     }
+    public function actionMeasurements($deviceId){
+
+        $device = $this->deviceManager->findDeviceById($deviceId);
+        if ($device != null){
+            $this->template->measurements = $device->getMeasurements();
+        }
+
+    }
     public function renderEdit($deviceId){
         $this->template->device = $this->deviceManager->findDeviceById($deviceId);
     }

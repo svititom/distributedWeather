@@ -30,35 +30,35 @@ class Measurement extends BaseEntity implements EnvironmentMeasurements
      */
     protected $device;
     /**
-     * @ORM\column(type="float")
+     * @ORM\Column(type="float")
      * @var float
      */
     protected $temperature;
     /**
-     * @ORM\column(type="float")
+     * @ORM\Column(type="float")
      * @var float
      */
     protected $humidity;
     /**
-     * @ORM\column(type="float")
+     * @ORM\Column(type="float")
      * @var float
      */
     protected $pressure;
     //todo find a better way to represent locations ...
     /**
-     * @ORM\column(type="string")
+     * @ORM\Column(type="string")
      * @var string
      */
     protected $location;
     /**
-     * @ORM\column(type="string")
+     * @ORM\Column(type="string")
      * @var string
      */
     protected $locationAccuracy;
 
     /**
-     * @ORM\column(type="datetime")
-     * @var Carbon
+     * @ORM\Column(type="datetime")
+     * @var \DateTime
      */
     protected $datetime;
 
@@ -78,4 +78,37 @@ class Measurement extends BaseEntity implements EnvironmentMeasurements
         $this->locationAccuracy = $measurements[$this::KEY_LOCATION_ACC];
         $this->datetime         = new Carbon($measurements[$this::KEY_DATETIME]);
     }
+
+    /**
+     * @return float
+     */
+    public function getTemperature(): float
+    {
+        return $this->temperature;
+    }
+
+    /**
+     * @return float
+     */
+    public function getHumidity(): float
+    {
+        return $this->humidity;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPressure(): float
+    {
+        return $this->pressure;
+    }
+
+    /**
+     * @return Carbon
+     */
+    public function getDatetime(): string
+    {
+        return $this->datetime->format('H:i:s Y-m-d');
+    }
+
 }

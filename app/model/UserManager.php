@@ -4,6 +4,7 @@ namespace App\Model;
 
 use App\Entities\Device;
 use App\Entities\User;
+use Exception;
 use Instante\Helpers\MissingValueException;
 use Kdyby\Doctrine\EntityManager;
 use Latte\Engine;
@@ -26,7 +27,7 @@ class UserManager implements Nette\Security\IAuthenticator
      *
      * @return null|User
      */
-    public function findUserByUsername($username): ?User
+    public function findUserByUsername($username)
     {
         return $this->em->getRepository(User::class)->findOneBy(array('name' => $username));
     }
@@ -35,12 +36,14 @@ class UserManager implements Nette\Security\IAuthenticator
      * @param $email
      * @return null|User
      */
-    public function findUserByEmail($email): ?User{
+    public function findUserByEmail($email)
+    {
         return $this->em->getRepository(User::class)->findOneBy(array('email' => $email));
 
     }
 
-    public function findUserById($id): ?User{
+    public function findUserById($id)
+    {
         return $this->em->getRepository(User::class)->findOneBy(["id" => $id]);
     }
 
@@ -126,7 +129,11 @@ class UserManager implements Nette\Security\IAuthenticator
         $user = new User($username, $email, $password, User::ROLE_USER);
         $this->em->persist($user);
         $this->em->flush($user);
-        $this->userMailer->sendVerificationMail($user->generateVerificationHash(), $email);
+        try {
+            $this->userMailer->sendVerificationMail($user->generateVerificationHash(), $email);
+        }catch (Exception $e) {
+            throw new MailingException();
+        }
     }
 
 
@@ -185,3 +192,4 @@ class ExpiredLinkException extends \Exception
 {}
 class UserNotFoundException extends \Exception
 {}
+class MailingException extends \Exception {}

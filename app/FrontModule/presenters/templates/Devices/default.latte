@@ -2,24 +2,24 @@
 
 
     <h1>Your devices:</h1>
+    <table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Model</th>
+        <th>Vendor</th>
+        <th>Temperature<br>accuracy</th>
+        <th>Humidity<br>accuracy</th>
+        <th>Pressure<br>accuracy</th>
+        <th>Token</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
     {if $devices != null}
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Model</th>
-                <th>Vendor</th>
-                <th>Temperature<br>accuracy</th>
-                <th>Humidity<br>accuracy</th>
-                <th>Pressure<br>accuracy</th>
-                <th>Token</th>
-                <th>Actions</th>
-            </tr>
-            </thead>
-            <tbody>
             {foreach $devices as $device}
                 <tr>
-                    <td><a n:href="Devices:edit $device->getId()">{$device->getName()}</a></td>
+                    <td><a n:href="Devices:measurements $device->getId()">{$device->getName()}</a></td>
                     <td>{$device->getModel()}</td>
                     <td>{$device->getVendor()}</td>
                     <td>±{$device->getTemperatureAccuracy()}°C</td>
@@ -30,17 +30,11 @@
 
                 </tr>
             {/foreach}
-
-            </tbody>
-        </table>
-        <td><a n:href="add" class="btn btn-primary">New device</a></td>
-
-    {else}
-        <h4><p>You haven't added any devices yet :(</p><h4>
     {/if}
-    <br>
-    <h2><p>Add a <a n:href="add">new device</a></p></h2>
-    <br>
+    </tbody>
+    </table>
+    <td><a n:href="add" class="btn btn-primary">New device</a></td>
+
 
 
 {/block}

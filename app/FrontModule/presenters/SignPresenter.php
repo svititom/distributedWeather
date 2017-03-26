@@ -2,6 +2,7 @@
 
 namespace App\FrontModule\Presenters;
 
+use App\Model\MailingException;
 use App\Model\UserMailer;
 use App\Model\UserNotFoundException;
 use Nette;
@@ -70,6 +71,9 @@ class SignPresenter extends \App\BasePresenter
 			$message = 'Sorry, please choose a different email, ' . $values->email . ' is already taken';
 			$form->addError($message);
 			return;
+		} catch (MailingException $e) {
+		    $this->flashMessage('Account created, but failed to send verification email', 'warning');
+            $this->redirect('Sign:in');
 		}
 
 		$this->redirect('Sign:in');

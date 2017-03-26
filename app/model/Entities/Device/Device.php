@@ -183,7 +183,7 @@ class Device extends BaseEntity
     /**
      * @return mixed
      */
-    public function getAuthToken() : ?string
+    public function getAuthToken()
     {
         return $this->authToken;
     }
@@ -191,7 +191,7 @@ class Device extends BaseEntity
     /**
      * @return mixed
      */
-    public function getAuthTokenExpiry() : ?Carbon
+    public function getAuthTokenExpiry()
     {
         return  Carbon::instance($this->authTokenExpiry);
     }
@@ -201,5 +201,15 @@ class Device extends BaseEntity
         //todo validate measurements
         $this->measurements[] = $measurement;
     }
+
+    /**
+     * @return mixed
+     * //todo CHANGE TO LAZY LOAD!
+     */
+    public function getMeasurements()
+    {
+        return $this->measurements->toArray();
+    }
+
 }
 class InvalidDeviceSettingsException extends \Exception {}

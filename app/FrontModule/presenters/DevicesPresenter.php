@@ -10,6 +10,7 @@ namespace App\FrontModule\Presenters;
 use App\Model\DuplicateNameException;
 use App\Entities\DeviceManager;
 use App\Model\UserManager;
+use Carbon\Carbon;
 
 
 class DevicesPresenter extends BaseSecurePresenter
@@ -32,6 +33,8 @@ class DevicesPresenter extends BaseSecurePresenter
         $form = $this->formFactory->create();
         $form->addText('name', 'Device name', null, 30)
             ->setRequired('Please type a name for this device');
+        $form->addCheckbox('public', 'Make measurements public?')
+            ->setDefaultValue(true);
         $form->addText('tempAccuracy', 'Temperature measurement accuracy (in °C)')
             ->setDefaultValue(0);
         $form->addText('humidAccuracy', 'Humidity measurement accuracy (in %RH)')
@@ -104,6 +107,7 @@ class DevicesPresenter extends BaseSecurePresenter
         $device = $this->deviceManager->findDeviceById($deviceId);
         if ($device != null){
             $this->template->measurements = $device->getMeasurements();
+            $this->template->numberMeasurements = count($device->getMeasurements());
         }
 
     }
@@ -112,6 +116,16 @@ class DevicesPresenter extends BaseSecurePresenter
     }
     public function renderDefault()
     {
-        $this->template->devices = $this->userManager->getUserDevices($this->getUser()->getId());
+        $devices = $this->userManager->getUserDevices($this->getUser()->getId());
+        $this->template->devices = $devices;
+        $this->template->devicesActive = $this->deviceManager->areDevicesActive($devices->toArray());
+        dump($this->deviceManager->areDevicesActive($devices->toArray()));
+    }
+    public function renderGraphs($deviceId){
+        $measurements = $this->deviceManager->getDeviceMeasurements($deviceId);
+        $this->template->temperatureData = $measurements["temperature"];
+        $this->template->humidityData    = $measurements["humidity"];
+        $this->template->pressureData    = $measurements["pressure"];
+        $this->template->xVals           = $measurements["datetime"];
     }
 }

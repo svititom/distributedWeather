@@ -45,12 +45,12 @@ class SignPresenter extends \App\BasePresenter
 	protected function createComponentSignInForm()
 	{
 		$form = $this->formFactory->create();
-		$form->addText('username')
-			->setRequired('Please enter your username.')
-			->setAttribute('placeholder', 'Username');
-		$form->addPassword('password')
-			->setRequired('Please enter your password.')
-			->setAttribute('placeholder', 'Password');
+		$form->addText('username', 'Username or email')
+			->setRequired('Please enter your username.');
+			//->setAttribute('placeholder', 'Username');
+		$form->addPassword('password', 'Password')
+			->setRequired('Please enter your password.');
+			//->setAttribute('placeholder', 'Password');
 		$form->addCheckbox('remember', 'Keep me signed in');
 		$form->addProtection('You have been logged out due to a timeout');
 		$form->addSubmit('send', 'Sign in');
@@ -85,21 +85,21 @@ class SignPresenter extends \App\BasePresenter
 	protected function createComponentSignUpForm()
 	{
 		$form = $this->formFactory->create();
-		$form->addText('username')
-			->setRequired('Please pick a username.')
-			->setAttribute('placeholder','Username');
-		$form->addText('email')
+		$form->addText('username', 'Username');
+			//->setRequired('Please pick a username.')
+			//->setAttribute('placeholder','Username');
+		$form->addText('email', 'Email')
 			->setRequired('Please enter your e-mail.')
-			->setAttribute('placeholder','E-mail')
+			//->setAttribute('placeholder','E-mail')
 			->addRule($form::EMAIL);
-		$form->addPassword('password')
+		$form->addPassword('password', 'Password')
 			->setRequired('Please create a password.')
-			->setAttribute('placeholder', sprintf('Password, at least %d characters', self::PASSWORD_MIN_LENGTH))
+			->setAttribute('placeholder', sprintf('At least %d characters', self::PASSWORD_MIN_LENGTH))
 			->addRule($form::MIN_LENGTH, NULL, self::PASSWORD_MIN_LENGTH);
-		$form->addPassword('passwordVerify')
+		$form->addPassword('passwordVerify', 'Retype password')
 			->setRequired('Please retype your password')
-			->addRule(Form::EQUAL, 'Passwords are not the same', $form['password'])
-			->setAttribute('placeholder','Retype your password');
+			->addRule(Form::EQUAL, 'Passwords are not the same', $form['password']);
+			//->setAttribute('placeholder','Retype your password');
 		$form->addSubmit('send', 'Sign up');
 		$form->onSuccess[] = [$this, 'signUpSuccess'];
 		return $form;

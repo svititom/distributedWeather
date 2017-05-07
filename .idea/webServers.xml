@@ -3,7 +3,15 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="d48cb2e4-1798-4fbc-ac81-fccbbe7c7afb" name="endora" url="http://distributedweather.mzf.cz/web/">
-        <fileTransfer host="endora.endora.cz" port="21" password="dffedfc5dfc7dfcbdfd9df9bdf98df99" username="svititomftp">
+        <fileTransfer host="endora.endora.cz" port="21" username="svititomftp" password="dffedfc5dfc7dfcbdfd9df9bdf98df99">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" maxConnections="5" passiveMode="true" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="eebf037a-b554-477c-9289-0f5a29bc3bb2" name="endora2" url="http://distributedweather.mzf.cz/web/">
+        <fileTransfer host="endora.endora.cz" port="21" username="svititomftp" password="dffedfc5dfc7dfcbdfd9df9bdf98df99">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" maxConnections="3" passiveMode="true" showHiddenFiles="true" />
           </advancedOptions>

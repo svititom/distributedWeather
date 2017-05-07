@@ -2,10 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eae80ce3-0efa-4201-bce0-c31c69080fdd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ApiModule/presenters/BasePresenter.php" afterPath="$PROJECT_DIR$/app/ApiModule/presenters/BasePresenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ApiModule/presenters/MeasurementPresenter.php" afterPath="$PROJECT_DIR$/app/ApiModule/presenters/MeasurementPresenter.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/untitled.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/webResources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/Version20170106080337.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/adminer/adminer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/adminer/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/denied/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/denied/checker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/denied/web.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/failed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/info.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/nginx/checker.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/passed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/rewrite/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/rewrite/checker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/rewrite/web.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/assets/warning.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/checker/index.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/DevicesPresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/DevicesPresenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/templates/@layout.latte" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/templates/@layout.latte" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/default.latte" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/default.latte" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bootstrap.php" afterPath="$PROJECT_DIR$/app/bootstrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Entities/Device/Device.php" afterPath="$PROJECT_DIR$/app/model/Entities/Device/Device.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Entities/Device/DeviceManager.php" afterPath="$PROJECT_DIR$/app/model/Entities/Device/DeviceManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Entities/Device/Measurement.php" afterPath="$PROJECT_DIR$/app/model/Entities/Device/Measurement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/UserManager.php" afterPath="$PROJECT_DIR$/app/model/UserManager.php" />
     </list>
+    <list id="71ed1ed5-c231-4533-89df-dc948241099b" name="NotCommited" comment="" />
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -18,7 +54,7 @@
   </component>
   <component name="ComposerSettings" phpInterpreterId="58e026cd-0e56-4e1f-8421-ea07ebeb52bc">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <pharPath>C:\Users\swith\xampp\htdocs\sandbox\composer.phar</pharPath>
+    <pharPath>C:\Users\swith\xampp7\htdocs\netteSandbox\composer.phar</pharPath>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -37,63 +73,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BasePresenter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/BasePresenter.php">
+      <file leaf-file-name="graphs.latte" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/graphs.latte">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="69" column="70" lean-forward="false" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
-              <folding>
-                <element signature="e#297#328#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IResponse.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/nette/http/src/Http/IResponse.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+            <state relative-caret-position="17">
+              <caret line="66" column="37" lean-forward="false" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Presenter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Presenter.php">
+      <file leaf-file-name="synchronizer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/dygraphs/src-es5/extras/synchronizer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="598" column="47" lean-forward="false" selection-start-line="598" selection-start-column="47" selection-end-line="598" selection-end-column="47" />
+            <state relative-caret-position="2244">
+              <caret line="132" column="6" lean-forward="false" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthtokenPresenter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/AuthtokenPresenter.php">
+      <file leaf-file-name="synchronizer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/synchronizer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="3264">
+              <caret line="192" column="28" lean-forward="false" selection-start-line="192" selection-start-column="28" selection-end-line="192" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonResponse.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/Responses/JsonResponse.php">
+      <file leaf-file-name="dygraph.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/dygraphs/src/dygraph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+            <state relative-caret-position="52156">
+              <caret line="3096" column="0" lean-forward="false" selection-start-line="3096" selection-start-column="0" selection-end-line="3096" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exception.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/exception.log">
+      <file leaf-file-name="config.neon" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.neon">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.session-storage.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log/error.session-storage.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2720">
+              <caret line="160" column="37" lean-forward="false" selection-start-line="160" selection-start-column="37" selection-end-line="160" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.local.neon" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.local.neon">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DevicesPresenter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/DevicesPresenter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2040">
+              <caret line="128" column="69" lean-forward="false" selection-start-line="128" selection-start-column="69" selection-end-line="128" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -102,37 +156,20 @@
       <file leaf-file-name="error.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log/error.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2008">
-              <caret line="146" column="124" lean-forward="false" selection-start-line="146" selection-start-column="124" selection-end-line="146" selection-end-column="124" />
+            <state relative-caret-position="5695">
+              <caret line="335" column="82" lean-forward="false" selection-start-line="335" selection-start-column="82" selection-end-line="335" selection-end-column="82" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeasurementPresenter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/MeasurementPresenter.php">
+      <file leaf-file-name="exception.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log/exception.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="52" column="7" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+            <state relative-caret-position="442">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.latte" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/default.latte">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="faviconOld.ico" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/faviconOld.ico">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -147,23 +184,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>list</find>
-      <find>comment</find>
-      <find>OneT</find>
-      <find>.form-group</find>
-      <find>device</find>
-      <find>add</find>
-      <find>a</find>
-      <find>em</find>
-      <find>mappedB</find>
-      <find>art</find>
-      <find>flush</find>
-      <find>logI</find>
       <find>isLo</find>
       <find>devicemana</find>
       <find>zend_extensio</find>
       <find>signInS</find>
-      <find>name</find>
       <find>$device</find>
       <find>Arrays</find>
       <find>delete</find>
@@ -177,35 +201,51 @@
       <find>authToken</find>
       <find>instance</find>
       <find>todo</find>
+      <find>?</find>
+      <find>carbon</find>
+      <find>HYDRATE</find>
+      <find>resultset</find>
+      <find>datetime</find>
+      <find>format</find>
+      <find>-</find>
+      <find>in</find>
+      <find>signup</find>
+      <find>signupsucc</find>
+      <find>name</find>
+      <find>zoom</find>
+      <find>range</find>
     </findStrings>
+    <replaceStrings>
+      <replace>/</replace>
+    </replaceStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="../../php/php.exe www/index.php orm:scheda-tool:create" />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:create" />
-      <command text="php" />
-      <command text="..\..\php/php.exe ..\index.php" />
-      <command text="..\..\php/php.exe www/index.php" />
-      <command text="..\..\php/php-win.exe" />
-      <command text="../../php/php-win.exe" />
-      <command text="../../php/php.exe www/index.php" />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:validate-schema" />
-      <command text="../../php/php.exe www/index.php orm:validate-schema" />
-      <command text="../../php/php.exe www/index.php" />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:update" />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:update --dump-sql" />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:update --force" />
-      <command text="../../php/php.exe www/index.php orm:drop" />
+      <command text="../../php/php.exe www/index.php migrations:diff" />
+      <command text="../../php/php.exe www/index.php migrations:migrate" />
+      <command text="../../php/php.exe www/index.php migrations:diff" />
+      <command text="../../php/php.exe www/index.php migrations:migrate" />
+      <command text="../../php/php.exe www/index.php migrations:diff" />
+      <command text="../../php/php.exe www/index.php " />
       <command text="../../php/php.exe www/index.php orm:schema-tool:drop" />
       <command text="../../php/php.exe www/index.php orm:schema-tool:drop --force" />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:generate --dump-sql" />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:create --dump-sql" />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:update --dump-sql" />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:drop --dump-sql" />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:create --dump-sql" />
+      <command text="../../php/php.exe www/index.php orm:schema-tool:create --force" />
       <command text="../../php/php.exe www/index.php orm:schema-tool:create " />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:update " />
-      <command text="../../php/php.exe www/index.php orm:schema-tool:update  --force" />
+      <command text="../../php/php.exe www/index.php orm:schema-tool:update" />
+      <command text="../../php/php.exe www/index.php orm:schema-tool:update --dump-sql" />
+      <command text="php" />
+      <command text="cd ..\..\php/php-win.exe" />
+      <command text="cd ../../php/php-win.exe" />
+      <command text="cd ..\..\php\php-win.exe" />
+      <command text=" ..\..\php\php-win.exe" />
+      <command text="../../php/php-win.exe" />
+      <command text="../../php/php-win.exe www/index.php" />
+      <command text="../../php/php-win.exe www/index.php migrations:diff" />
+      <command text="../../php/php-win.exe www/index.php orm:validate-schemo" />
+      <command text="../../php/php-win.exe www/index.php orm:validate-schema" />
+      <command text="composer.phar" />
+      <command text="php www/index.php" />
+      <command text="php www/index.php orm:validate-schema" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -219,23 +259,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/AboutPresenter.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/DeviceManagmentPresenter.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/DeviceManagement/default.latte" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/BaseSecurePresenter.php" />
-        <option value="$PROJECT_DIR$/www/bootstrap/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/www/css/form.css" />
         <option value="$PROJECT_DIR$/app/FrontModule/CustomFormValidators.php" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php" />
         <option value="$PROJECT_DIR$/../../php/php.ini" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/@layout.latte" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/HomepagePresenter.php" />
         <option value="$PROJECT_DIR$/app/config/config.neon" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/delete.latte" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/edit.latte" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Homepage/default.latte" />
         <option value="$PROJECT_DIR$/app/model/User/UserMailer.php" />
-        <option value="$PROJECT_DIR$/app/model/UserManager.php" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/ErrorPresenter.php" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Error/404.latte" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Error/403.latte" />
@@ -252,24 +283,33 @@
         <option value="$PROJECT_DIR$/app/model/Entities/Device/InvalidDeviceSettingsException.php" />
         <option value="$PROJECT_DIR$/app/model/Entities/Device/Measurements.php" />
         <option value="$PROJECT_DIR$/app/model/Entities/Device/EnvironmentEnvironmentMeasurements.php" />
-        <option value="$PROJECT_DIR$/app/model/Entities/Device/Measurement.php" />
-        <option value="$PROJECT_DIR$/app/model/Entities/Device/Device.php" />
         <option value="$PROJECT_DIR$/app/router/RouterFactory.php" />
         <option value="$PROJECT_DIR$/log/exception--2017-03-23--13-33--93f2ca7356.html" />
         <option value="$PROJECT_DIR$/app/ApiModule/presenters/AccessTokenPresenter.php" />
         <option value="$PROJECT_DIR$/app/ApiModule/presenters/TokenPresenter.php" />
         <option value="$PROJECT_DIR$/app/ApiModule/presenters/AuthtokenPresenter.php" />
-        <option value="$PROJECT_DIR$/app/model/Entities/Device/EnvironmentMeasurements.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/model/Entities/Device/DeviceManager.php" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/PostPresenter.php" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/create.latte" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/DevicesPresenter.php" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/add.latte" />
-        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/default.latte" />
         <option value="$PROJECT_DIR$/log/error.log" />
         <option value="$PROJECT_DIR$/app/ApiModule/presenters/BasePresenter.php" />
         <option value="$PROJECT_DIR$/app/ApiModule/presenters/MeasurementPresenter.php" />
+        <option value="$PROJECT_DIR$/app/model/Entities/Device/EnvironmentMeasurements.php" />
+        <option value="$PROJECT_DIR$/app/model/MailingException.php" />
+        <option value="$PROJECT_DIR$/app/forms/SignUpFormFactory.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/@layout.latte" />
+        <option value="$PROJECT_DIR$/app/model/Entities/Device/Measurement.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/measurements.latte" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php" />
+        <option value="$PROJECT_DIR$/app/model/UserManager.php" />
+        <option value="$PROJECT_DIR$/app/model/Entities/Device/Device.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/default.latte" />
+        <option value="$PROJECT_DIR$/app/model/Entities/Device/DeviceManager.php" />
+        <option value="$PROJECT_DIR$/app/config/config.local.neon" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/DevicesPresenter.php" />
+        <option value="$PROJECT_DIR$/www/js/synchronizer.js" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/graphs.latte" />
       </list>
     </option>
   </component>
@@ -282,6 +322,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpServers">
     <servers />
@@ -348,10 +391,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="697" />
-    <option name="y" value="-1088" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -426,7 +468,248 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.library.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dygraphs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dygraphs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dygraphs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extras" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontModule" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presenters" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontModule" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presenters" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netteSandbox" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontModule" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presenters" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Devices" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Changed Files">
           <PATH>
@@ -456,21 +739,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="vendor">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="netteSandbox">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT=".idea">
+            <PATH_ELEMENT USER_OBJECT="app">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -573,339 +842,26 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.library.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP Runtime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entities" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entities" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Device" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontModule" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presenters" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontModule" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presenters" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontModule" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presenters" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Error" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontModule" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presenters" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Devices" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApiModule" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presenters" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminModule" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presenters" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netteSandbox" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminModule" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Command" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Apache Config" />
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="error.log&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/error.log&#10;exception.lo&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/exception.log&#10;favicon&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/www/favicon.ico&#10;favio&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/www/faviconOld.ico&#10;default&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/templates/Devices/default.latte&#10;add.latte&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/templates/Devices/add.latte&#10;todo&#9;ACTION&#9;ActivateTODOToolWindow&#10;create&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/templates/Post/create.latte&#10;devicepr&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/DevicesPresenter.php&#10;postpres&#9;null&#9;null&#10;create.la&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/templates/Post/create.latte&#10;devices&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/DevicesPresenter.php&#10;autht&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/AuthtokenPresenter.php&#10;exception--2017-03-23--14-54&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/exception--2017-03-23--14-54--eb0762207f.html&#10;environment&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/EnvironmentMeasurements.php&#10;base&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/BasePresenter.php&#10;measurementpres&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/MeasurementPresenter.php&#10;error.lo&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/error.log&#10;excep&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/exception.log&#10;verifytoke&#9;null&#9;null&#10;measure&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/MeasurementPresenter.php&#10;measurement&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/MeasurementPresenter.php&#10;authtok&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/AuthtokenPresenter.php&#10;measurem&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/MeasurementPresenter.php&#10;Autht&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/AuthtokenPresenter.php&#10;meas&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/MeasurementPresenter.php&#10;authto&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/AuthtokenPresenter.php&#10;measurementpr&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/MeasurementPresenter.php&#10;measurementpre&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/MeasurementPresenter.php&#10;error&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/error.log&#10;exce&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/exception.log&#10;router&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/router/RouterFactory.php&#10;exceptio&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/exception.log&#10;AccessT&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/AccessTokenPresenter.php&#10;exception--&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/exception--2017-03-23--13-33--93f2ca7356.html&#10;errorpres&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/ErrorPresenter.php&#10;ErrorPresenter&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/ErrorPresenter.php&#10;err&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/error.log&#10;config.neon&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/config/config.neon&#10;config.neo&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/config/config.local.neon&#10;device&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/Device.php&#10;datetime&#9;null&#9;null&#10;getAuthtokenExp&#9;null&#9;null&#10;getauthtoken&#9;null&#9;null&#10;exception--2017-03-23--13-&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/exception--2017-03-23--13-33--93f2ca7356.html&#10;getAuthTokenEx&#9;null&#9;null&#10;devicemana&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/DeviceManager.php&#10;access&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/AccessTokenPresenter.php&#10;measur&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/Measurement.php&#10;ir&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/vendor/nette/http/src/Http/IResponse.php" />
+    <property name="SearchEverywhereHistoryKey" value="log&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/error.session-storage.log&#10;config.&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/config/config.neon&#10;error&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/error.log&#10;config&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/config/config.local.neon&#10;config.n&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/config/config.neon&#10;signpr&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/SignPresenter.php&#10;datetime&#9;null&#9;null&#10;measure&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/Measurement.php&#10;measur&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/Measurement.php&#10;device&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/Device.php&#10;measurement&#9;null&#9;null&#10;mea&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/Measurement.php&#10;DYGRAPHS&#9;null&#9;null&#10;createAddDe&#9;null&#9;null&#10;devicemana&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/DeviceManager.php&#10;default.latt&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/templates/Devices/default.latte&#10;measurement.l&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/templates/Devices/measurements.latte&#10;measurement.ph&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/EnvironmentMeasurements.php&#10;measurement.&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/Measurement.php&#10;measurem&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/templates/Devices/measurements.latte&#10;devicespre&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/DevicesPresenter.php&#10;signpre&#9;null&#9;null&#10;usermana&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/UserManager.php&#10;config.neon&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/config/config.local.neon&#10;userman&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/UserManager.php&#10;config.lo&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/config/config.local.neon&#10;error.log&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/error.log&#10;exception.lo&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/exception.log&#10;favicon&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/www/favicon.ico&#10;favio&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/www/faviconOld.ico&#10;default&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/templates/Devices/default.latte&#10;add.latte&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/templates/Devices/add.latte&#10;todo&#9;ACTION&#9;ActivateTODOToolWindow&#10;create&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/templates/Post/create.latte&#10;devicepr&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/DevicesPresenter.php&#10;postpres&#9;null&#9;null&#10;create.la&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/templates/Post/create.latte&#10;devices&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/FrontModule/presenters/DevicesPresenter.php&#10;autht&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/AuthtokenPresenter.php&#10;exception--2017-03-23--14-54&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/exception--2017-03-23--14-54--eb0762207f.html&#10;environment&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/model/Entities/Device/EnvironmentMeasurements.php&#10;base&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/BasePresenter.php&#10;measurementpres&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/MeasurementPresenter.php&#10;error.lo&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/error.log&#10;excep&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/log/exception.log&#10;verifytoke&#9;null&#9;null&#10;authtok&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/AuthtokenPresenter.php&#10;Autht&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/AuthtokenPresenter.php&#10;meas&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/MeasurementPresenter.php&#10;authto&#9;FILE&#9;file://C:/Users/swith/xampp7/htdocs/netteSandbox/app/ApiModule/presenters/AuthtokenPresenter.php" />
     <property name="nodejs_interpreter_path" value="C:/Program Files (x86)/nodejs/node" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/xampp7015/php/php.exe" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\swith\xampp7\htdocs\netteSandbox\www\js" />
       <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\www\css" />
       <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app" />
       <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\model\User\templates" />
       <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\AdminModule\presenters\templates" />
-      <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\FrontModule\presenters\WeatherData" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\swith\xampp\htdocs\netteSandbox\app\model\Entities\Article" />
@@ -1013,8 +969,31 @@
       </list>
     </option>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.DevicesPresenter.php">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/vendor/twbs/bootstrap/docs/examples/starter-template/index.html">
+      <method />
+    </configuration>
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -1098,6 +1077,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="eae80ce3-0efa-4201-bce0-c31c69080fdd" name="Default" comment="" />
+      <changelist id="71ed1ed5-c231-4533-89df-dc948241099b" name="NotCommited" comment="" />
       <created>1482195477850</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -1126,7 +1106,17 @@
       <workItem from="1490017601436" duration="98000" />
       <workItem from="1490017720811" duration="6881000" />
       <workItem from="1490085044528" duration="5912000" />
-      <workItem from="1490263346993" duration="7817000" />
+      <workItem from="1490263346993" duration="10091000" />
+      <workItem from="1490374889352" duration="135000" />
+      <workItem from="1490375059100" duration="5576000" />
+      <workItem from="1490502739480" duration="1920000" />
+      <workItem from="1493448679081" duration="8589000" />
+      <workItem from="1493524486484" duration="12728000" />
+      <workItem from="1493690402609" duration="1595000" />
+      <workItem from="1493808078062" duration="267000" />
+      <workItem from="1493808890867" duration="17032000" />
+      <workItem from="1494148219929" duration="897000" />
+      <workItem from="1494151589489" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="Device management added &#10;TODO Add Authorization token generation&#10;TODO refactor ids to reasonable names (deviceId)">
       <created>1490085201262</created>
@@ -1177,11 +1167,25 @@
       <option name="project" value="LOCAL" />
       <updated>1490268742185</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated response code for Post Created">
+      <created>1490372349003</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1490372349003</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added simlpe table to show measurements">
+      <created>1490504086617</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1490504086617</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227264000" />
+    <option name="totallyTimeSpent" value="278283000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1193,32 +1197,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="697" y="-1088" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="676" y="0" width="697" height="745" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25885418" sideWeight="0.4883721" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23221758" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5152439" sideWeight="0.50215286" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496329" sideWeight="0.4883721" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23221758" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5135983" sideWeight="0.50215286" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46965098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32344213" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33506945" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33506945" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30030257" sideWeight="0.48625794" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5173979" sideWeight="0.5137421" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20029673" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5173979" sideWeight="0.5137421" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75457317" sideWeight="0.49784714" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32307693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6914226" sideWeight="0.49784714" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13075314" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25641027" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32298136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1273,7 +1276,9 @@
     <MESSAGE value="Updated router for API; access token at /authtoken now&#10;added measurement presenter, can send a single measurement; requeris all parameters; no content checking&#10;" />
     <MESSAGE value="Updated .gitignore" />
     <MESSAGE value="Presentation of data updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Presentation of data updated" />
+    <MESSAGE value="Updated response code for Post Created" />
+    <MESSAGE value="Added simlpe table to show measurements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added simlpe table to show measurements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1309,399 +1314,370 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Error/4xx.latte">
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Article/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        <state relative-caret-position="-849">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Article/ArticleManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-645">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Article/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-628">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/MailingException.php" />
+    <entry file="file://$PROJECT_DIR$/app/forms/SignUpFormFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/Error4xxPresenter.php">
+    <entry file="file://$PROJECT_DIR$/node_modules/dygraphs/docs/options.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="183">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/User/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1979">
-          <caret line="194" column="7" lean-forward="true" selection-start-line="194" selection-start-column="7" selection-end-line="194" selection-end-column="7" />
-          <folding>
-            <element signature="e#113#150#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/kdyby/doctrine/src/Kdyby/Doctrine/QueryBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/kdyby/doctrine/src/Kdyby/Doctrine/EntityManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="80" column="20" lean-forward="false" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="801" column="20" lean-forward="false" selection-start-line="801" selection-start-column="20" selection-end-line="801" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_0.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="586" column="9" lean-forward="false" selection-start-line="586" selection-start-column="9" selection-end-line="586" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2769">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/Debugger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2142">
-          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/kdyby/doctrine/src/Kdyby/Doctrine/EntityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="195" column="29" lean-forward="false" selection-start-line="195" selection-start-column="29" selection-end-line="195" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/EntityPersister.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="198" column="20" lean-forward="false" selection-start-line="198" selection-start-column="20" selection-end-line="198" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/ShowsPresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="25" column="52" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/InvalidDeviceSettingsException.php" />
-    <entry file="file://$PROJECT_DIR$/app/model/Entities/BaseEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/Measurement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/date_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2737">
-          <caret line="296" column="6" lean-forward="false" selection-start-line="296" selection-start-column="6" selection-end-line="296" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nesbot/carbon/src/Carbon/Carbon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="236" column="31" lean-forward="false" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/Device.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="195" column="57" lean-forward="false" selection-start-line="195" selection-start-column="57" selection-end-line="195" selection-end-column="57" />
-          <folding>
-            <element signature="e#112#146#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.local.neon">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.neon">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/ErrorPresenter.php">
+    <entry file="file://$PROJECT_DIR$/www/js/dygraph.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/exception--2017-03-23--13-33--93f2ca7356.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11629">
-          <caret line="5107" column="36591" lean-forward="false" selection-start-line="5107" selection-start-column="36591" selection-end-line="5107" selection-end-column="36591" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/utils/src/Utils/Arrays.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/router/RouterFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding>
-            <marker date="1490249038841" expanded="true" signature="517:577" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/http/src/Http/IRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="106" column="13" lean-forward="false" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/EnvironmentMeasurements.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/exception--2017-03-23--14-54--eb0762207f.html">
+    <entry file="file://$PROJECT_DIR$/www/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="345" lean-forward="false" selection-start-line="0" selection-start-column="345" selection-end-line="0" selection-end-column="345" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/www/js/dygraph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-646">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/DeviceManager.php">
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/components/bootstrap-form.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/components/form.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/MyWeatherData/default.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/delete.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/instante/extended-form-macros/src/IFormFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/SubmitButton.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/PostPresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="104" column="42" lean-forward="false" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Post/create.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/CliPresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="46" column="46" lean-forward="false" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/DataPresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/DevicesPresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="52" column="44" lean-forward="false" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/add.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/www/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/faviconOld.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/www/css/signin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Homepage/default.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/@layout.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/BaseEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nesbot/carbon/src/Carbon/Carbon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="1050" column="20" lean-forward="false" selection-start-line="1050" selection-start-column="20" selection-end-line="1050" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="903" column="35" lean-forward="false" selection-start-line="903" selection-start-column="26" selection-end-line="903" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/EnvironmentMeasurements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3434">
+          <caret line="202" column="9" lean-forward="false" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/Measurement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="61" column="16" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+          <folding>
+            <element signature="e#112#146#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/date_c.php" />
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/BaseSecurePresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25109">
+          <caret line="1477" column="9" lean-forward="false" selection-start-line="1477" selection-start-column="9" selection-end-line="1477" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/edit.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/security/src/Security/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="84" column="20" lean-forward="false" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/User/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/UserManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="116" column="37" lean-forward="false" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/Device.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="213" column="5" lean-forward="false" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
+          <folding>
+            <element signature="e#112#146#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="641" column="20" lean-forward="false" selection-start-line="641" selection-start-column="20" selection-end-line="641" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/Error4xxPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Entities/Device/DeviceManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="200" column="5" lean-forward="false" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/measurements.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/default.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/exception.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log/error.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2008">
-          <caret line="146" column="124" lean-forward="false" selection-start-line="146" selection-start-column="124" selection-end-line="146" selection-end-column="124" />
+        <state relative-caret-position="5695">
+          <caret line="335" column="82" lean-forward="false" selection-start-line="335" selection-start-column="82" selection-end-line="335" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/AuthtokenPresenter.php">
+    <entry file="file://$PROJECT_DIR$/log/exception.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/BasePresenter.php">
+    <entry file="file://$PROJECT_DIR$/app/config/config.neon">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="69" column="70" lean-forward="false" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
-          <folding>
-            <element signature="e#297#328#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/http/src/Http/IResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Presenter.php">
+    <entry file="file://$PROJECT_DIR$/log/error.session-storage.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="598" column="47" lean-forward="false" selection-start-line="598" selection-start-column="47" selection-end-line="598" selection-end-column="47" />
+        <state relative-caret-position="2720">
+          <caret line="160" column="37" lean-forward="false" selection-start-line="160" selection-start-column="37" selection-end-line="160" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/ApiModule/presenters/MeasurementPresenter.php">
+    <entry file="file://$PROJECT_DIR$/app/config/config.local.neon">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="52" column="7" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        <state relative-caret-position="357">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/Responses/JsonResponse.php">
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/DevicesPresenter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        <state relative-caret-position="2040">
+          <caret line="128" column="69" lean-forward="false" selection-start-line="128" selection-start-column="69" selection-end-line="128" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dygraphs/src-es5/extras/synchronizer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="132" column="6" lean-forward="false" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/dygraphs/src/dygraph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52156">
+          <caret line="3096" column="0" lean-forward="false" selection-start-line="3096" selection-start-column="0" selection-end-line="3096" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/synchronizer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3264">
+          <caret line="192" column="28" lean-forward="false" selection-start-line="192" selection-start-column="28" selection-end-line="192" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/templates/Devices/graphs.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="66" column="37" lean-forward="false" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
           <folding />
         </state>
       </provider>

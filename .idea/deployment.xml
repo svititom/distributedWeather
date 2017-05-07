@@ -19,6 +19,23 @@
           </excludedPaths>
         </serverdata>
       </paths>
+      <paths name="endora2">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/distributedweather.mzf.cz/web" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/app/config/config.local.neon" />
+            <excludedPath local="true" path="$PROJECT_DIR$/temp" />
+            <excludedPath local="true" path="$PROJECT_DIR$/log" />
+            <excludedPath path="/distributedweather.mzf.cz/web/log" />
+            <excludedPath path="/distributedweather.mzf.cz/web/temp" />
+            <excludedPath path="/distributedweather.mzf.cz/web/app/config/config.local.neon" />
+            <excludedPath local="true" path="$PROJECT_DIR$/www/adminer" />
+            <excludedPath local="true" path="$PROJECT_DIR$/www/checker" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
     </serverData>
   </component>
 </project>

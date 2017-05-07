@@ -8,6 +8,7 @@
 
 namespace App\Entities;
 use app\model\Entities\BaseEntity;
+
 use App\Entities\Device;
 use Carbon\Carbon;
 use Doctrine\ORM\Mapping as ORM;
@@ -25,7 +26,7 @@ class Measurement extends BaseEntity implements EnvironmentMeasurements
     use Identifier;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Device", inversedBy="Measurement")
+     * @ORM\ManyToOne(targetEntity="Device", inversedBy="measurements")
      * @var Device
      */
     protected $device;

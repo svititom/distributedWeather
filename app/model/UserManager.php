@@ -23,23 +23,20 @@ class UserManager implements Nette\Security\IAuthenticator
     use Nette\SmartObject;
 
     /**
-     * @param $username
+     * @param $username or email
      *
      * @return null|User
      */
     public function findUserByUsername($username)
     {
-        return $this->em->getRepository(User::class)->findOneBy(array('name' => $username));
-    }
-
-    /**
-     * @param $email
-     * @return null|User
-     */
-    public function findUserByEmail($email)
-    {
-        return $this->em->getRepository(User::class)->findOneBy(array('email' => $email));
-
+        if (!$username){
+            return null;
+        }
+        $user = $this->em->getRepository(User::class)->findOneBy(array('email' => $username));
+        if (!$user){
+            $user = $this->em->getRepository(User::class)->findOneBy(array('name'=> $username));
+        }
+        return $user;
     }
 
     public function findUserById($id)
@@ -99,12 +96,12 @@ class UserManager implements Nette\Security\IAuthenticator
 
 
     /**
-     * @param $email users email todo deprecate username
+     * @param $email users email or username
      * @param $hash - verification hash in db
      * @param $password - new password
      */
     public function resetPassword($email, $hash, $password) {
-        $user = $this->findUserByEmail($email);
+        $user = $this->findUserByUsername($email);
         $user->resetPassword($hash, $password);
     }
 
@@ -112,17 +109,20 @@ class UserManager implements Nette\Security\IAuthenticator
         //todo implement
     }
 
+
     /**
-     * Adds new user.
-     * @param  string
-     * @param  string
-     * @param  string
-     * @return void
+     * @param $username
+     * @param $email
+     * @param $password
      * @throws DuplicateNameException
+     * @throws MailingException
      */
     public function addUser($username, $email, $password)
     {
-        if($this->findUserByUsername($username) or $this->findUserByEmail($email)){
+        if(!$email){
+            throw new \InvalidArgumentException();
+        }
+        if($this->findUserByUsername($username)){
             throw new DuplicateNameException();
         }
 
@@ -138,13 +138,13 @@ class UserManager implements Nette\Security\IAuthenticator
 
 
     /**
-     * @param $email
+     * @param $email or username
      * @param $hash
      * @return bool
      * @throws UserNotFoundException
      */
     public function verifyUser($email, $hash){
-        $user = $this->findUserByEmail($email);
+        $user = $this->findUserByUsername($email);
         if(!$user){
             throw new UserNotFoundException();
         }

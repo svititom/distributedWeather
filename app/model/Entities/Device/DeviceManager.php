@@ -14,7 +14,12 @@ use App\Entities\User;
 use App\Model\DuplicateNameException;
 use App\Model\UserManager;
 use Carbon\Carbon;
+use Doctrine\ORM\AbstractQuery;
 use Doctrine\ORM\NoResultException;
+use App\Entities\Measurement;
+use Kdyby;
+use Kdyby\Doctrine\QueryObject;
+use Kdyby\Doctrine\ResultSet;
 
 class DeviceManager
 {
@@ -195,7 +200,64 @@ class DeviceManager
         ];
     }
 
+    public function getDeviceMeasurements(string $deviceId) : array
+    {
+        $query = $this->em->createQueryBuilder()
+            ->select('m.datetime, m.temperature, m.humidity, m.pressure')->from(Measurement::class, 'm')
+            ->innerJoin('m.device', 'd')
+            ->where('d.id = :deviceId')->setParameter('deviceId', $deviceId)
+            ->getQuery();
+        $measurements = $query->getResult(AbstractQuery::HYDRATE_OBJECT);
+        $temp = [];
+        $pres = [];
+        $humi = [];
+        $dates = [];
+        //$date = 0;
+        foreach($measurements as $measurement){
+            $date = $measurement["datetime"]->format('U');
+            $dates[]= $date;
+            $temp[] = $measurement["temperature"];
+            $humi[] = $measurement["humidity"];
+            $pres[] = $measurement["pressure"];
+            //$date++;
+        }
+
+        return array("temperature" => $temp,
+                    "humidity" => $humi,
+                    "pressure" => $pres,
+                    "datetime" => $dates);
+    }
+
+
+    /**
+     * @param array $devices  //Device or device id
+     * @param Carbon $timeout relative e.g. 10 minutes since last measurement
+     * @return array
+     */
+    public function areDevicesActive(array $devices) : array
+    {
+        $result = [];
+        foreach($devices as $device){
+            if (!is_string($device)){
+                //we got the device $id
+                $device = $device->getId();
+            }
+            $qb = $this->em->createQueryBuilder()
+                ->select('MAX(m.datetime)')->from(Device::class, 'd')
+                ->andWhere('d.id = :deviceId')->setParameter('deviceId', $device)
+                ->innerJoin('d.measurements', 'm');
+            $resultSet = $qb->getQuery()->getResult(AbstractQuery::HYDRATE_SINGLE_SCALAR);
+            if ($resultSet == ""){
+                $result[] = false;
+            } else {
+                $result[] = (new Carbon($resultSet))->addMinute(15)->gte(Carbon::now());
+            }
+        }
+        return $result;
+    }
+
 }
 
 class NoSuchDeviceException extends \Exception{}
 class InvalidAuthTokenException extends \Exception{}
+

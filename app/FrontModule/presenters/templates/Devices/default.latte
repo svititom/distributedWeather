@@ -6,6 +6,7 @@
     <thead>
     <tr>
         <th>Name</th>
+        <th>Status*</th>
         <th>Model</th>
         <th>Vendor</th>
         <th>Temperature<br>accuracy</th>
@@ -17,24 +18,30 @@
     </thead>
     <tbody>
     {if $devices != null}
-            {foreach $devices as $device}
+        {var $count = 0}
+
+        {foreach $devices as $device}
                 <tr>
                     <td><a n:href="Devices:measurements $device->getId()">{$device->getName()}</a></td>
+                    <td>{if $devicesActive[$count]}Active{else}Inactive{/if}</td>
                     <td>{$device->getModel()}</td>
                     <td>{$device->getVendor()}</td>
                     <td>±{$device->getTemperatureAccuracy()}°C</td>
                     <td>±{$device->getHumidityAccuracy()}%RH</td>
                     <td>±{$device->getPressureAccuracy()}hPa</td>
                     <td>{$device->getAuthToken()}</td>
-                    <td><a n:href="delete $device->getId()">remove</a></td>
+                    <td><a n:href="graphs $device->getId()">Graphs</a>
+                        <br/><a n:href="delete $device->getId()">remove</a></td>
 
                 </tr>
+            {$count++}
             {/foreach}
     {/if}
     </tbody>
     </table>
     <td><a n:href="add" class="btn btn-primary">New device</a></td>
 
-
+    <br/><br/><br/>
+    <p>*Active means device has sent in a measurement within the last 15 minutes</p>
 
 {/block}

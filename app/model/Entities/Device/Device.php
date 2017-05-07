@@ -76,9 +76,11 @@ class Device extends BaseEntity
 	protected $pressureAccuracy;
 
 	/**
-	 * @OneToMany(targetEntity="App\Entities\Measurement", mappedBy="device")
+	 * @OneToMany(targetEntity="App\Entities\Measurement", mappedBy="device", fetch="EXTRA_LAZY")
 	 */
 	protected $measurements;
+
+
 
 	/**
      * @var string

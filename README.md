@@ -13,24 +13,16 @@ Unfortunately, these sensors did not proliferate, and most phones still only hav
 Today, IoT (Internet of Things) is a big buzzword, but it means that it is posible to create hardware systems connected to internet very easily. ?? Do we even need this paragrahp??
 //started off as smart watch idea?
 
-## 3. Band Hardware/Software
+## 3. Hardware/Software
 
-*Update: Waiting for batteries to arrive, sadly ESP32 has very little bluetooth exapmles with full documentation, so I will have to study the bluetooth specification in some detail to create a working connection. It is a question whether to create the device as a weather beacon i.e. nonconnectable device which periodically transmits data or a connectable device which sends data only on request by the smartphone/controller app. The first approach would mean __maybe__ less work, but higher power consumption, ballpark maths puts it in days with a single 150mAh battery. The second approach will mean understanding the whole BLE 'stack' i.e. GATT and GAP, but most probably the power consumption will be much lower.*
-
-- [ ] Bluetooth connection
-- [ ] Interfacing with BME280
-- [ ] Interfacing with battery
-- [ ] Sending data over bluetooth
-- [ ] Sleeping to conserve battery
-- [ ] Battery consumption analysis
+Due to the complexity of the bluetooth stack and not enough examples avaialble, I've decided to move to a stationary weather station using the ESP8266
+A prototype has been developed and source code will be added soon
 
 ### Environmental Sensor
 
 After doing some research, it seems that the Bosch BME280 is an excellent candidate. It has all 3 sensors - temperature, humidity and atm. pressure and according to some tests conducted by the hacker/maker community, it seems to perform the best compared to other sensors in the < $10 price range. 
 
 It has *SPI* and *I2C* and operates at 3.3V which makes it easy to integrate. 
-
-//todo link to reviews/tests
 
 ### Connectivity/Processor
 
@@ -41,6 +33,7 @@ Each of these cases requires a different setup, for the first an SD card and may
 Most of the requirements seem to be satisfied by the Espressive ESP32 WiFi + Bluetooth SoC. It contains two ARM processors, WiFi and Bluetooth and a plethora of connectivity, which means that it can do all the data processing and sensor/external interfacing, provide most of the connectivity needed (it does not have a USB, but it does have support for an SD card if wired) and it allows for future expandability if needed.
 
 Depending on the requirements, it would be possible to provide a secondary chip to provide USB interfacing (I believe only a USB to serial chip is needed).
+UPDATE: For reasons outlined in Hardware/Software, I've decided to use the ESP8266 instead, as bluetooth is not required anymore.
 
 ### Power/battery
 
@@ -48,48 +41,38 @@ To allow easy production in the beginning, the system would be charged via a usb
 
 I have no experience with adding batteries to projects, so I have orderd generic battery charging circuits and some 150mAh batteries, with which I'll try to find the best solution experimentally. Hopefully this won't be rocket science.
 
+
+
 ## 4. Software (Non band client/server)
 
 ### Data format
 
-
-Since there are multiple measurements, and various sensors could be used, most probably the following set of data would make it easy to recognize:
-
-* Value //array of data?
-* Unit (short if possible, i.e. Pascal -> Pa, Celsius -> C, otherwise full), with standard SI prefixes (milli Ampere -> mA, MegaByte -> MB, etc.))
-* Accuracy (In same units as Value, or as percantage of value with % at the end)
-* Comment *Optional* (Could have description of unit or something else)
-* Sensor *Optional*
-* Timestamp *Optional*
-
-e.g. 
-* 25, C, 0.5, -, BME280, - -> 25°C, +- 0.5°C, no comment, sensor is BME280, no timestamp or
-* 80, RH, 5%, -, DHT22, -  -> 80% Relative Humidity, +- 4%RH (5% of 80), no comment, sensor is DHT22, no timestamp
-
-I will be experimenting what is the impact of the message size on battery time. If negligible, we can leave it nice and verbose, otherwise we can cut it down. (Current expectation is that it will be negligible).
+To simplify each transmission, the device parameters are set in the website i.e. accuracy, sensor vendor/model, location.
+Each transmission then contains only the weather data and a authentication token
 
 ### Server side
 
-For now a single server with a database (SQL? NOSQL? __Need to ask databasists__), simple presentation frontend and REST API for communication should be sufficent.
+For now a single server with a database, simple presentation frontend and REST API for communication should be sufficent.
 
 __How to keep data?__
 As they come with all info?
 Use location to sort into 'location bins' and remove accurate location?
 
-- [-] Frontend Presentation (Home, About, etc.) * in progress, data presentation needs to be done*
-- [ ] Frontend data access 
-- [ ] Frontend/Backend API (POST?)
+- [X] Frontend Presentation (Home, About, etc.) * in progress, data presentation needs to be done*
+- [X] Frontend data access 
+- [X] Frontend/Backend API (POST?)
 - [x] Backend database *base is up, will be updated depending on the actual data from the sensor*
 
 
 ### Client side
 
 Begin with an android app which connects via bluetooth to the sensor band, periodically checks the weather data, appends location and uploads to the server.
+//Android app put on hold, as BT no in use
 
-- [ ] Bluetooth connection
-- [ ] Getting location
-- [ ] Connecting to web server
-- [ ] Uploading data
+Current weather station:
+- [X] Load data from sensor
+- [X] Connect to web server
+- [X] Upload data
 
 ## 0. About
 Bc. Tomas Svitil,
